@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../controllers/instruments_controller.dart';
 
+
 class InstrumentsView extends GetView<InstrumentsController> {
   const InstrumentsView({Key? key}) : super(key: key);
   @override
@@ -33,3 +34,4 @@ class InstrumentsView extends GetView<InstrumentsController> {
     );
   }
 }
+
