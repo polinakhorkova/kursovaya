@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:kursovaya/app/routes/app_pages.dart';
 
-class FilterView extends StatefulWidget {
-  const FilterView({Key? key}) : super(key: key);
+class Filter2View extends StatefulWidget {
+  const Filter2View({Key? key}) : super(key: key);
 
   @override
-  _FilterViewState createState() => _FilterViewState();
+  _Filter2ViewState createState() => _Filter2ViewState();
 }
 
-class _FilterViewState extends State<FilterView> {
-  bool? _value1 = false;
-  bool? _value2 = false;
-  bool? _value3 = false;
-  bool? _value4 = false;
-  bool? _value5 = false;
-  bool? _value6 = false;
-   
+class _Filter2ViewState extends State<Filter2View> {
+  bool? _value7 = false;
+  bool? _value8 = false;
+  bool? _value9 = false;
+  bool? _value10 = false;
+  bool? _value11 = false;
+  bool? _value12 = false;
+  bool? _value13 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +48,7 @@ class _FilterViewState extends State<FilterView> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Оцените Ваш уровень:',
+                'Ваши цели: ',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.w800,
@@ -56,109 +57,109 @@ class _FilterViewState extends State<FilterView> {
               
               CheckboxListTile(
                 title: Text(
-                  'Продвинутый профессионал',
+                  'Создание презентаций',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value1,
+                value: _value7,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value1 = value;
+                    _value7 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Любитель',
+                  'Разработка плакатов и брошюр',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value2,
+                value: _value8,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value2 = value;
+                    _value8 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Начинающий',
+                  'Создание логотипов и брендинга',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value3,
+                value: _value9,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value3 = value;
-                  });
-                },
-              ),
-              
-
-
-
-              Text(
-                'Ваше устройство:',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),
-              
-              CheckboxListTile(
-                title: Text(
-                  'Компьютер на основе Windows',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value4,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value4 = value;
+                    _value9 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Компьютер на основе Linux',
+                  'Редактирование и обработка фотографий',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value5,
+                value: _value10,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value5 = value;
+                    _value10 = value;
                   });
                 },
-              ),
-              CheckboxListTile(
+              ),CheckboxListTile(
                 title: Text(
-                  'Компьютер на основе macOS',
+                  'Создание веб-дизайна и интерфейса',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value6,
+                value: _value11,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value6 = value;
+                    _value11 = value;
+                  });
+                },
+              ),CheckboxListTile(
+                title: Text(
+                  'Разработка 3D-моделей и анимации',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+                value: _value12,
+                onChanged: (bool? value) {
+                  setState(() {
+                    _value12 = value;
+                  });
+                },
+              ),CheckboxListTile(
+                title: Text(
+                  'Создание типографии и макетирования',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+                value: _value13,
+                onChanged: (bool? value) {
+                  setState(() {
+                    _value13 = value;
                   });
                 },
               ),
               SizedBox(height: 50),
               ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.FILTER2),
+                onPressed: () => Get.toNamed(Routes.FILTER3),
                 child: Container(
                   width: 200,
                   padding: EdgeInsets.all(15),
@@ -180,7 +181,6 @@ class _FilterViewState extends State<FilterView> {
                   ),
                 ),
               ),
-              
             ],
           ),
         ),

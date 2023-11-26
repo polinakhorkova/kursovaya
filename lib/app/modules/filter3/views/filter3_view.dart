@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:kursovaya/app/routes/app_pages.dart';
 
-class FilterView extends StatefulWidget {
-  const FilterView({Key? key}) : super(key: key);
+class Filter3View extends StatefulWidget {
+  const Filter3View({Key? key}) : super(key: key);
 
   @override
-  _FilterViewState createState() => _FilterViewState();
+  _Filter3ViewState createState() => _Filter3ViewState();
 }
 
-class _FilterViewState extends State<FilterView> {
-  bool? _value1 = false;
-  bool? _value2 = false;
-  bool? _value3 = false;
-  bool? _value4 = false;
-  bool? _value5 = false;
-  bool? _value6 = false;
-   
+class _Filter3ViewState extends State<Filter3View> {
+  bool? _value14 = false;
+  bool? _value15 = false;
+  bool? _value16 = false;
+  bool? _value17 = false;
+  bool? _value18 = false;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class _FilterViewState extends State<FilterView> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Оцените Ваш уровень:',
+                'Предпочитаемый бюджет: ',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.w800,
@@ -56,115 +56,87 @@ class _FilterViewState extends State<FilterView> {
               
               CheckboxListTile(
                 title: Text(
-                  'Продвинутый профессионал',
+                  'Полностью бесплатно',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value1,
+                value: _value14,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value1 = value;
+                    _value14 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Любитель',
+                  'До 500 рублей в месяц',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value2,
+                value: _value15,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value2 = value;
+                    _value15 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Начинающий',
+                  'До 1000 рублей в месяц',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value3,
+                value: _value16,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value3 = value;
-                  });
-                },
-              ),
-              
-
-
-
-              Text(
-                'Ваше устройство:',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),
-              
-              CheckboxListTile(
-                title: Text(
-                  'Компьютер на основе Windows',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value4,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value4 = value;
+                    _value16 = value;
                   });
                 },
               ),
               CheckboxListTile(
                 title: Text(
-                  'Компьютер на основе Linux',
+                  'До 5000 рублей в месяц',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value5,
+                value: _value17,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value5 = value;
+                    _value17 = value;
                   });
                 },
-              ),
-              CheckboxListTile(
+              ),CheckboxListTile(
                 title: Text(
-                  'Компьютер на основе macOS',
+                  '5000 рублей и более',
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value6,
+                value: _value18,
                 onChanged: (bool? value) {
                   setState(() {
-                    _value6 = value;
+                    _value18 = value;
                   });
                 },
               ),
               SizedBox(height: 50),
               ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.FILTER2),
+                onPressed: () => Get.toNamed(Routes.RESULT),
                 child: Container(
-                  width: 200,
+                  width: 900,
                   padding: EdgeInsets.all(15),
                   child: Center(
                     child: Text(
-                      'Далее',
+                      'Узнать какой инструмент мне подходит',
                       style:
                           TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
                     ),
@@ -180,7 +152,6 @@ class _FilterViewState extends State<FilterView> {
                   ),
                 ),
               ),
-              
             ],
           ),
         ),
