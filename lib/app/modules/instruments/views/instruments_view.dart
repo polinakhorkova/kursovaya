@@ -21,6 +21,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
       ),
       // backgroundColor: Color.fromRGBO(247, 143, 195, 1),
       body: SingleChildScrollView(
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient( 
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Color.fromRGBO(255, 105, 180, 1),
+              Color.fromRGBO(138, 43, 226, 1)], ),
+          ),
         child: Column(
           //  decoration: BoxDecoration(
           //   gradient: LinearGradient(
@@ -39,7 +47,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               style: TextStyle(
                 fontSize: 35,
                 fontWeight: FontWeight.w800,
-                color: Color.fromRGBO(186, 85, 211, 1),
+                color: Colors.white,
               ),
             ),
             Card(
@@ -297,7 +305,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.w800,
-                  color: Color.fromRGBO(186, 85, 211, 1)),
+                  color: Colors.white),
             ),
             Card(
               shape: RoundedRectangleBorder(
@@ -600,6 +608,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               ),
             ),
           ],
+        ),
         ),
       ),
     );

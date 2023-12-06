@@ -16,7 +16,9 @@ class _FilterViewState extends State<FilterView> {
   bool? _value4 = false;
   bool? _value5 = false;
   bool? _value6 = false;
-   
+  bool selectedOption = false;
+  bool selectedOption1 = false;
+  bool selectedOption2 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +55,6 @@ class _FilterViewState extends State<FilterView> {
                     fontWeight: FontWeight.w800,
                     color: Colors.white),
               ),
-              
               CheckboxListTile(
                 title: Text(
                   'Продвинутый профессионал',
@@ -62,10 +63,14 @@ class _FilterViewState extends State<FilterView> {
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value1,
-                onChanged: (bool? value) {
+                // value: _value1,
+                value: selectedOption,
+                // onChanged: (bool? value) {
+                onChanged: (value) {
                   setState(() {
-                    _value1 = value;
+                    //  _value1 = value;
+                    selectedOption = value!;
+                    ubdateApp();
                   });
                 },
               ),
@@ -77,10 +82,14 @@ class _FilterViewState extends State<FilterView> {
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value2,
-                onChanged: (bool? value) {
+                // value: _value2,
+                value: selectedOption2,
+                // onChanged: (bool? value) {
+                onChanged: (value) {
                   setState(() {
-                    _value2 = value;
+                    //  _value2 = value;
+                    selectedOption2 = value!;
+                    ubdateApp();
                   });
                 },
               ),
@@ -92,17 +101,17 @@ class _FilterViewState extends State<FilterView> {
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value3,
-                onChanged: (bool? value) {
+                // value: _value3,
+                value: selectedOption1,
+                // onChanged: (bool? value) {
+                onChanged: (value) {
                   setState(() {
-                    _value3 = value;
+                    //  _value3 = value;
+                    selectedOption1 = value!;
+                    ubdateApp();
                   });
                 },
               ),
-              
-
-
-
               Text(
                 'Ваше устройство:',
                 style: TextStyle(
@@ -110,7 +119,6 @@ class _FilterViewState extends State<FilterView> {
                     fontWeight: FontWeight.w800,
                     color: Colors.white),
               ),
-              
               CheckboxListTile(
                 title: Text(
                   'Компьютер на основе Windows',
@@ -180,11 +188,72 @@ class _FilterViewState extends State<FilterView> {
                   ),
                 ),
               ),
-              
             ],
           ),
         ),
       ),
     );
   }
+  void ubdateApp() {
+    if (!selectedOption && !selectedOption1 && !selectedOption2) {
+      // Показать заданное приложение для первого варианта
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Выбран первый вариант'),
+            content: Text('Показывать соответствующее заданное приложение'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('Закрыть'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    } else if (!selectedOption && !selectedOption1 && !selectedOption2) {
+      // Показать заданное приложение для второго варианта
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Выбран второй вариант'),
+            content: Text('Показывать соответствующее заданное приложение'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('Закрыть'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    } else if (!selectedOption && !selectedOption1 && !selectedOption2) {
+      // Показать заданное приложение для третьего варианта
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Выбран третий вариант'),
+            content: Text('Показывать соответствующее заданное приложение'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('Закрыть'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    }
+  }
 }
+
+
