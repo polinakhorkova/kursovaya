@@ -52,6 +52,8 @@ import '../modules/instr8/bindings/instr8_binding.dart';
 import '../modules/instr8/views/instr8_view.dart';
 import '../modules/instr9/bindings/instr9_binding.dart';
 import '../modules/instr9/views/instr9_view.dart';
+import '../modules/instructions/bindings/instructions_binding.dart';
+import '../modules/instructions/views/instructions_view.dart';
 import '../modules/instruments/bindings/instruments_binding.dart';
 import '../modules/instruments/views/instruments_view.dart';
 import '../modules/result/bindings/result_binding.dart';
@@ -204,6 +206,11 @@ class AppPages {
       name: _Paths.INSTR22,
       page: () => const Instr22View(),
       binding: Instr22Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTRUCTIONS,
+      page: () => const InstructionsView(),
+      binding: InstructionsBinding(),
     ),
   ];
 }

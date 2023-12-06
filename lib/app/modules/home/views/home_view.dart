@@ -106,7 +106,7 @@ class HomeView extends GetView<HomeController> {
               ),
               SizedBox(height: 40),
               ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.INSTRUMENTSII),
+                onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
                 child: Container(
                   width: 300,
                   padding: EdgeInsets.all(15),
