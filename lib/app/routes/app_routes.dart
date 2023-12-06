@@ -19,6 +19,19 @@ abstract class Routes {
   static const INSTR8 = _Paths.INSTR8;
   static const INSTR9 = _Paths.INSTR9;
   static const INSTR10 = _Paths.INSTR10;
+  static const INSTRUMENTSII = _Paths.INSTRUMENTSII;
+  static const INSTR11 = _Paths.INSTR11;
+  static const INSTR12 = _Paths.INSTR12;
+  static const INSTR13 = _Paths.INSTR13;
+  static const INSTR14 = _Paths.INSTR14;
+  static const INSTR15 = _Paths.INSTR15;
+  static const INSTR16 = _Paths.INSTR16;
+  static const INSTR17 = _Paths.INSTR17;
+  static const INSTR18 = _Paths.INSTR18;
+  static const INSTR19 = _Paths.INSTR19;
+  static const INSTR20 = _Paths.INSTR20;
+  static const INSTR21 = _Paths.INSTR21;
+  static const INSTR22 = _Paths.INSTR22;
 }
 
 abstract class _Paths {
@@ -39,4 +52,17 @@ abstract class _Paths {
   static const INSTR8 = '/instr8';
   static const INSTR9 = '/instr9';
   static const INSTR10 = '/instr10';
+  static const INSTRUMENTSII = '/instrumentsii';
+  static const INSTR11 = '/instr11';
+  static const INSTR12 = '/instr12';
+  static const INSTR13 = '/instr13';
+  static const INSTR14 = '/instr14';
+  static const INSTR15 = '/instr15';
+  static const INSTR16 = '/instr16';
+  static const INSTR17 = '/instr17';
+  static const INSTR18 = '/instr18';
+  static const INSTR19 = '/instr19';
+  static const INSTR20 = '/instr20';
+  static const INSTR21 = '/instr21';
+  static const INSTR22 = '/instr22';
 }

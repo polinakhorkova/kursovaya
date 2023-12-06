@@ -12,8 +12,32 @@ import '../modules/instr1/bindings/instr1_binding.dart';
 import '../modules/instr1/views/instr1_view.dart';
 import '../modules/instr10/bindings/instr10_binding.dart';
 import '../modules/instr10/views/instr10_view.dart';
+import '../modules/instr11/bindings/instr11_binding.dart';
+import '../modules/instr11/views/instr11_view.dart';
+import '../modules/instr12/bindings/instr12_binding.dart';
+import '../modules/instr12/views/instr12_view.dart';
+import '../modules/instr13/bindings/instr13_binding.dart';
+import '../modules/instr13/views/instr13_view.dart';
+import '../modules/instr14/bindings/instr14_binding.dart';
+import '../modules/instr14/views/instr14_view.dart';
+import '../modules/instr15/bindings/instr15_binding.dart';
+import '../modules/instr15/views/instr15_view.dart';
+import '../modules/instr16/bindings/instr16_binding.dart';
+import '../modules/instr16/views/instr16_view.dart';
+import '../modules/instr17/bindings/instr17_binding.dart';
+import '../modules/instr17/views/instr17_view.dart';
+import '../modules/instr18/bindings/instr18_binding.dart';
+import '../modules/instr18/views/instr18_view.dart';
+import '../modules/instr19/bindings/instr19_binding.dart';
+import '../modules/instr19/views/instr19_view.dart';
 import '../modules/instr2/bindings/instr2_binding.dart';
 import '../modules/instr2/views/instr2_view.dart';
+import '../modules/instr20/bindings/instr20_binding.dart';
+import '../modules/instr20/views/instr20_view.dart';
+import '../modules/instr21/bindings/instr21_binding.dart';
+import '../modules/instr21/views/instr21_view.dart';
+import '../modules/instr22/bindings/instr22_binding.dart';
+import '../modules/instr22/views/instr22_view.dart';
 import '../modules/instr3/bindings/instr3_binding.dart';
 import '../modules/instr3/views/instr3_view.dart';
 import '../modules/instr4/bindings/instr4_binding.dart';
@@ -120,6 +144,66 @@ class AppPages {
       name: _Paths.INSTR10,
       page: () => const Instr10View(),
       binding: Instr10Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR11,
+      page: () => const Instr11View(),
+      binding: Instr11Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR12,
+      page: () => const Instr12View(),
+      binding: Instr12Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR13,
+      page: () => const Instr13View(),
+      binding: Instr13Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR14,
+      page: () => const Instr14View(),
+      binding: Instr14Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR15,
+      page: () => const Instr15View(),
+      binding: Instr15Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR16,
+      page: () => const Instr16View(),
+      binding: Instr16Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR17,
+      page: () => const Instr17View(),
+      binding: Instr17Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR18,
+      page: () => const Instr18View(),
+      binding: Instr18Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR19,
+      page: () => const Instr19View(),
+      binding: Instr19Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR20,
+      page: () => const Instr20View(),
+      binding: Instr20Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR21,
+      page: () => const Instr21View(),
+      binding: Instr21Binding(),
+    ),
+    GetPage(
+      name: _Paths.INSTR22,
+      page: () => const Instr22View(),
+      binding: Instr22Binding(),
     ),
   ];
 }

@@ -42,26 +42,19 @@ class HomeView extends GetView<HomeController> {
             children: [
               Text('Добро пожаловать!',
                   style: TextStyle(
-                      fontSize: 35,
+                      fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.white)),
               Padding(
-                padding: EdgeInsets.only(top: 40, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 30, left: 200, right: 150),
                 child: Text(
-                    'С помощью данного инструмента Вы сможете подобрать приложения для разработки дизайна,',
+                    'С помощью данного инструмента Вы сможете подобрать приложения для разработки дизайна, который необходим именно вам!',
                     style: TextStyle(
-                        fontSize: 35,
+                        fontSize: 30,
                         fontWeight: FontWeight.w800,
                         color: Colors.white)),
               ),
-              Text(
-                'который необходим именно Вам!',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),
-              SizedBox(height: 50),
+              SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () => Get.toNamed(Routes.FILTER),
                 child: Container(
@@ -71,7 +64,7 @@ class HomeView extends GetView<HomeController> {
                     child: Text(
                       'Начать',
                       style:
-                          TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
                     ),
                   ),
                 ),
@@ -85,7 +78,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () => Get.toNamed(Routes.INSTRUMENTS),
                 child: Container(
@@ -94,8 +87,36 @@ class HomeView extends GetView<HomeController> {
                   child: Center(
                     child: Text(
                       'Инструменты',
-                      style:
-                          TextStyle(fontSize: 40, fontWeight: FontWeight.w800, color: Colors.white),
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                  ),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      Color.fromRGBO(235, 82, 235, 1)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 40),
+              ElevatedButton(
+                onPressed: () => Get.toNamed(Routes.INSTRUMENTSII),
+                child: Container(
+                  width: 300,
+                  padding: EdgeInsets.all(15),
+                  child: Center(
+                    child: Text(
+                      'Инструкции',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
                     ),
                   ),
                 ),
