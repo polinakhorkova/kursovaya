@@ -46,7 +46,7 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only( left: 200, right: 150),
+                padding: EdgeInsets.only( left: 180, right: 150),
               child: Text(
                 '1. Начните с изучения базовых принципов дизайна, таких как композиция, цветовая гамма, типографика и т.д.',
                 style: TextStyle(
@@ -69,7 +69,7 @@ class InstructionsView extends GetView<InstructionsController> {
               ),
                ),
                Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 60, right: 150),
               child:
               Text(
                 '3. Проходите онлайн-курсы или уроки по использованию выбранных программ и основам дизайна.',

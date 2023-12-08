@@ -28,7 +28,7 @@ class _FilterViewState extends State<FilterView> {
   bool? _value16 = false;
   bool? _value17 = false;
   bool? _value18 = false;
-  bool selectedOption = false;
+  bool selectedOption3 = false;
   bool selectedOption1 = false;
   bool selectedOption2 = false;
 
@@ -61,6 +61,7 @@ class _FilterViewState extends State<FilterView> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(height: 40),
               Text(
                 'Оцените Ваш уровень:',
                 style: TextStyle(
@@ -79,12 +80,12 @@ class _FilterViewState extends State<FilterView> {
                       color: Colors.white),
                 ),
                 // value: _value1,
-                value: selectedOption,
+                value: selectedOption1,
                 // onChanged: (bool? value) {
                 onChanged: (value) {
                   setState(() {
                     //  _value1 = value;
-                    selectedOption = value!;
+                    selectedOption1 = value!;
                     ubdateApp();
                   });
                 },
@@ -123,16 +124,16 @@ class _FilterViewState extends State<FilterView> {
                       color: Colors.white),
                 ),
                 // value: _value3,
-                value: selectedOption1,
+                value: selectedOption3,
                 // onChanged: (bool? value) {
                 onChanged: (value) {
                   setState(() {
                     //  _value3 = value;
-                    selectedOption1 = value!;
+                    selectedOption3 = value!;
                     ubdateApp();
                   });
                 },
-              ),),
+              ),),SizedBox(height: 40),
               Text(
                 'Ваше устройство:',
                 style: TextStyle(
@@ -191,7 +192,7 @@ class _FilterViewState extends State<FilterView> {
                     _value6 = value;
                   });
                 },
-              ),),
+              ),),SizedBox(height: 40),
               Text(
                 'Ваши цели: ',
                 style: TextStyle(
@@ -314,7 +315,7 @@ class _FilterViewState extends State<FilterView> {
                     _value13 = value;
                   });
                 },
-              ),),
+              ),),SizedBox(height: 40),
               Text(
                 'Предпочитаемый бюджет: ',
                 style: TextStyle(
@@ -440,7 +441,7 @@ class _FilterViewState extends State<FilterView> {
     );
   }
   void ubdateApp() {
-    if (!selectedOption && !selectedOption1 && !selectedOption2) {
+    if (!selectedOption1) {
       // Показать заданное приложение для первого варианта
       showDialog(
         context: context,
@@ -459,7 +460,7 @@ class _FilterViewState extends State<FilterView> {
           );
         },
       );
-    } else if (!selectedOption && !selectedOption1 && !selectedOption2) {
+    } else if (!selectedOption2) {
       // Показать заданное приложение для второго варианта
       showDialog(
         context: context,
@@ -478,7 +479,7 @@ class _FilterViewState extends State<FilterView> {
           );
         },
       );
-    } else if (!selectedOption && !selectedOption1 && !selectedOption2) {
+    } else if (!selectedOption3) {
       // Показать заданное приложение для третьего варианта
       showDialog(
         context: context,

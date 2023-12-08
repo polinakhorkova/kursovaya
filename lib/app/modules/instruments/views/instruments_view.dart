@@ -62,7 +62,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -71,7 +71,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR2),
                 child: ListTile(
@@ -80,14 +80,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                       'векторный графический редактор для создания и редактирования иллюстраций и макетов',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
-                          color: Colors.white)),
+                          color: Color.fromRGBO(255, 105, 180, 1))),
                 ),
               ),
             ),
@@ -95,7 +95,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR3),
                 child: ListTile(
@@ -104,14 +104,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'приложение для дизайна интерфейсов, иллюстраций и веб-дизайна',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -120,7 +120,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR4),
                 child: ListTile(
@@ -129,14 +129,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'векторный графический редактор для создания и редактирования иллюстраций и макетов',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -145,7 +145,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR5),
                 child: ListTile(
@@ -154,14 +154,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'создание интерактивных прототипов',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -170,7 +170,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR6),
                 child: ListTile(
@@ -179,14 +179,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'проектирование элементов и объектов в 2D и 3D',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -195,7 +195,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR7),
                 child: ListTile(
@@ -204,14 +204,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'приложение для дизайна интерфейсов, совместной работы над проектами и прототипирования',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -220,7 +220,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR8),
                 child: ListTile(
@@ -229,14 +229,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'проектирование пользовательского интерфейса',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -245,7 +245,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR9),
                 child: ListTile(
@@ -254,14 +254,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'онлайн-платформа для создания дизайна социальных медиа, презентаций, баннеров и других графических материалов',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -270,7 +270,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR10),
                 child: ListTile(
@@ -279,14 +279,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                   trailing: Text(
                     'вёрстка и дизайн книг, брошюр, журналов',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(255, 105, 180, 1)),
                   ),
                 ),
               ),
@@ -302,7 +302,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR11),
                 child: ListTile(
@@ -311,7 +311,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.w800,
-                      color: Colors.white,
+                      color: Color.fromRGBO(186, 85, 211, 1),
                     ),
                   ),
                   trailing: Text(
@@ -319,7 +319,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -328,7 +328,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR12),
                 child: ListTile(
@@ -337,14 +337,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                       'программа для оптимизации рабочих процессов и стратегий',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
-                          color: Colors.white)),
+                          color: Color.fromRGBO(186, 85, 211, 1))),
                 ),
               ),
             ),
@@ -352,7 +352,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR13),
                 child: ListTile(
@@ -361,14 +361,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'разработка программного обеспечения, веб-дизайна и графического дизайна',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -377,7 +377,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR14),
                 child: ListTile(
@@ -386,14 +386,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'преобразование изображений в код HTML и CSS',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -402,7 +402,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR15),
                 child: ListTile(
@@ -411,14 +411,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'создание разных вариантов дизайна и наполнения презентаций',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -427,7 +427,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR16),
                 child: ListTile(
@@ -436,14 +436,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'графический редактор для веб-, UI- и UX-дизайна',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -452,7 +452,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR17),
                 child: ListTile(
@@ -461,14 +461,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'инструмент для проектирования пользовательского интерфейса',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -477,7 +477,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR18),
                 child: ListTile(
@@ -486,14 +486,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'распознавание наброска пользователя и превращение его в качественный рисунок',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -502,7 +502,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR19),
                 child: ListTile(
@@ -511,14 +511,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'улучшение качества изображений и фото',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -527,7 +527,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR20),
                 child: ListTile(
@@ -536,14 +536,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'генерация комбинаций шрифтов с помощью нейросетей',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -552,7 +552,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR21),
                 child: ListTile(
@@ -561,14 +561,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'инструмент для создания и редактирования логотипов',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
@@ -577,7 +577,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR22),
                 child: ListTile(
@@ -586,14 +586,14 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w800,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                   trailing: Text(
                     'разработка ПО и веб-приложений для удобного и эффективного управления жизненным циклом клиентов и их путешествиями',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromRGBO(186, 85, 211, 1)),
                   ),
                 ),
               ),
