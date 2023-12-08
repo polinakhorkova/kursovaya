@@ -56,6 +56,8 @@ import '../modules/instructions/bindings/instructions_binding.dart';
 import '../modules/instructions/views/instructions_view.dart';
 import '../modules/instruments/bindings/instruments_binding.dart';
 import '../modules/instruments/views/instruments_view.dart';
+import '../modules/recommends/bindings/recommends_binding.dart';
+import '../modules/recommends/views/recommends_view.dart';
 import '../modules/result/bindings/result_binding.dart';
 import '../modules/result/views/result_view.dart';
 
@@ -211,6 +213,11 @@ class AppPages {
       name: _Paths.INSTRUCTIONS,
       page: () => const InstructionsView(),
       binding: InstructionsBinding(),
+    ),
+    GetPage(
+      name: _Paths.RECOMMENDS,
+      page: () => const RecommendsView(),
+      binding: RecommendsBinding(),
     ),
   ];
 }
