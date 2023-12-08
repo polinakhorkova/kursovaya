@@ -255,6 +255,7 @@ class InstructionsView extends GetView<InstructionsController> {
                   color: Colors.white,
                 ),
               ),),),),
+              SizedBox(height: 40),
              ],
               
             

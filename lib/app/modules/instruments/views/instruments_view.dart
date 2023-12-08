@@ -30,16 +30,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               Color.fromRGBO(138, 43, 226, 1)], ),
           ),
         child: Column(
-          //  decoration: BoxDecoration(
-          //   gradient: LinearGradient(
-          //    begin: Alignment.topCenter,
-          //    end: Alignment.bottomCenter,
-          //   colors: [
-          //     Color.fromRGBO(255, 105, 180, 1),
-          //     Color.fromRGBO(138, 43, 226, 1)
-          //   ],
-          //    ),
-          //  ),
+          
 
           children: [
             Text(
@@ -54,7 +45,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
               elevation: 1,
-              color: Color.fromRGBO(255, 105, 180, 1),
+              color: Colors.white,
               child: GestureDetector(
                 onTap: () => Get.toNamed(Routes.INSTR1),
                 child: ListTile(
@@ -63,7 +54,7 @@ class InstrumentsView extends GetView<InstrumentsController> {
                     style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.w800,
-                      color: Colors.white,
+                      color: Color.fromRGBO(255, 105, 180, 1),
                     ),
                   ),
                   trailing: Text(
