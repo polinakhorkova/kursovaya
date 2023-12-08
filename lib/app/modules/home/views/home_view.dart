@@ -105,30 +105,98 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
               SizedBox(height: 40),
-              ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
-                child: Container(
-                  width: 300,
-                  padding: EdgeInsets.all(15),
-                  child: Center(
-                    child: Text(
-                      'Инструкции',
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white),
+              // ElevatedButton(
+              //   onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
+              //   child: Container(
+              //     width: 300,
+              //     padding: EdgeInsets.all(15),
+              //     child: Center(
+              //       child: Text(
+              //         'Инструкции',
+              //         style: TextStyle(
+              //             fontSize: 30,
+              //             fontWeight: FontWeight.w800,
+              //             color: Colors.white),
+              //       ),
+              //     ),
+              //   ),
+              //   style: ButtonStyle(
+              //     backgroundColor: MaterialStateProperty.all<Color>(
+              //         Color.fromRGBO(235, 82, 235, 1)),
+              //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              //       RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(10),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 300,
+                    height: 65,
+                    child: ElevatedButton(
+                      onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
+                      child: Container(
+                        width: 300,
+                        padding: EdgeInsets.all(15),
+                        child: Center(
+                          child: Text(
+                            'Инструкции',
+                            style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            Color.fromRGBO(235, 82, 235, 1)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(235, 82, 235, 1)),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  SizedBox(
+                    width: 300,
+                    height: 65,
+                    child: ElevatedButton(
+                      onPressed: () => Get.toNamed(Routes.RECOMMENDS),
+                      child: Container(
+                        width: 300,
+                        padding: EdgeInsets.all(15),
+                        child: Center(
+                          child: Text(
+                            'Рекомендации',
+                            style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            Color.fromRGBO(235, 82, 235, 1)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                ),
+                ],
               ),
             ],
           ),
