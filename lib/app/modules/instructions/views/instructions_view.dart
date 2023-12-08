@@ -78,7 +78,7 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),),
+              ),), 
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
               child:
