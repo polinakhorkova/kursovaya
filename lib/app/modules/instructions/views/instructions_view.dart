@@ -27,7 +27,7 @@ class InstructionsView extends GetView<InstructionsController> {
               end: Alignment.bottomCenter,
               colors: [
                 Color.fromRGBO(255, 105, 180, 1),
-                Color.fromRGBO(138, 43, 226, 1)
+                Color.fromRGBO(138, 43, 226, 1),
               ],
             ),
           ),
@@ -44,9 +44,9 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),SizedBox(height: 30),
+              ),SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only( left: 200, right: 150),
               child: Text(
                 '1. Начните с изучения базовых принципов дизайна, таких как композиция, цветовая гамма, типографика и т.д.',
                 style: TextStyle(
@@ -91,7 +91,24 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),
               
-              ),SizedBox(height: 40),
+              ),
+                
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+              child:
+
+              Container(width:1000, height: 60,
+               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),color: Colors.pink),
+               child: Center(
+              child: Text(
+                'Инструменты, подходящие Вам: Canva',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                ),
+              ),),),),SizedBox(height: 40),
               Text(
                 'Инструкции для любителей дизайна:',
                 style: TextStyle(
@@ -99,9 +116,10 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),SizedBox(height: 30),
+              ),
+              SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only( left: 200, right: 150),
               child: Text(
                 '1. Расширьте свои знания в области дизайна, изучая продвинутые техники и методы работы с цветом, композицией и другими аспектами.',
                 style: TextStyle(
@@ -146,7 +164,24 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),
               
-              ),SizedBox(height: 40),
+              ),
+              
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+              child:
+
+              Container(width:1000, height: 60,
+               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),color: Colors.pink),
+               child: Center(
+              child: Text(
+                'Инструменты, подходящие Вам: ...',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                ),
+              ),),),),SizedBox(height: 40),
               Text(
                 'Инструкции для профессионалов:',
                 style: TextStyle(
@@ -154,9 +189,9 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),SizedBox(height: 30),
+              ),SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only( left: 200, right: 150),
               child: Text(
                 '1. Используйте профессиональные программы с высоким уровнем безопасности и поддержки, такие как Adobe Photoshop или Adobe Illustrator для создания сложных и масштабных проектов.',
                 style: TextStyle(
@@ -202,6 +237,24 @@ class InstructionsView extends GetView<InstructionsController> {
               ),
               
               ),
+              
+              
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+              child:
+
+              Container(width:1000, height: 60,
+               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),color: Colors.pink),
+               child: Center(
+              child: Text(
+                'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                ),
+              ),),),),
              ],
               
             
