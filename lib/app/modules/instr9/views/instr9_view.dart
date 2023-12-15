@@ -12,21 +12,22 @@ class Instr9View extends GetView<Instr9Controller> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'DesignToolFinder',
+          'Дизайн - инструменты и анализ',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,
         toolbarHeight: 100,
         backgroundColor: Color.fromRGBO(186, 85, 211, 1),
       ),
-       body: Container(decoration: BoxDecoration(
-         gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-         colors: [
-           Color.fromRGBO(255, 105, 180, 1),
-          Color.fromRGBO(138, 43, 226, 1)
-         ],
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromRGBO(255, 105, 180, 1),
+              Color.fromRGBO(138, 43, 226, 1)
+            ],
           ),
         ),
         child: Container(
@@ -42,48 +43,53 @@ class Instr9View extends GetView<Instr9Controller> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                    'Canva - это онлайн-инструмент для дизайна, который позволяет пользователям создавать графические дизайны, презентации, социальные медиа-посты, баннеры, обложки для книг и многое другое. С помощью Canva можно использовать готовые шаблоны и элементы дизайна, а также загружать собственные изображения и шрифты. ',  style: TextStyle(
+                    'Canva - это онлайн-инструмент для дизайна, который позволяет пользователям создавать графические дизайны, презентации, социальные медиа-посты, баннеры, обложки для книг и многое другое. С помощью Canva можно использовать готовые шаблоны и элементы дизайна, а также загружать собственные изображения и шрифты. ',
+                    style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w800,
                         color: Colors.white)),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-             child: Text(
-                'Преимущества:',
-                style: TextStyle(
-                   fontSize: 25,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-             ),
+                child: Text(
+                  'Преимущества:',
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                'Удобство использования, множество бесплатных шаблонов, разработка дизайнов для различных целей, возможность использования различных форматов сохранения, возможность работы с разных гаджетов.',   style: TextStyle(
-                   fontSize: 20,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-             ),),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-             child: Text(
-                'Недостатки:',
-                style: TextStyle(
-                   fontSize: 25,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-             ),
+                  'Удобство использования, множество бесплатных шаблонов, разработка дизайнов для различных целей, возможность использования различных форматов сохранения, возможность работы с разных гаджетов.',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                'Отсутствие офлайн доступа к проектам, отсутствие возможности изменения размера изображения, сложности в контроле графического качества изображений, ограниченный набор стандартных шаблонов.', 
-                style: TextStyle(   fontSize: 20,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-             ),),
-               SizedBox(height:40),
+                  'Недостатки:',
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Text(
+                  'Отсутствие офлайн доступа к проектам, отсутствие возможности изменения размера изображения, сложности в контроле графического качества изображений, ограниченный набор стандартных шаблонов.',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+              ),
+              SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
                   launch('https://www.canva.com/');
@@ -109,8 +115,6 @@ class Instr9View extends GetView<Instr9Controller> {
                   ),
                 ),
               ),
-              
-              
             ],
           ),
         ),
@@ -118,5 +122,3 @@ class Instr9View extends GetView<Instr9Controller> {
     );
   }
 }
-
-       

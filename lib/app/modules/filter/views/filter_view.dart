@@ -23,7 +23,7 @@ class _FilterViewState extends State<FilterView> {
   bool? _value11 = false;
   bool? _value12 = false;
   bool? _value13 = false;
-   bool? _value14 = false;
+  bool? _value14 = false;
   bool? _value15 = false;
   bool? _value16 = false;
   bool? _value17 = false;
@@ -37,7 +37,7 @@ class _FilterViewState extends State<FilterView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'DesignToolFinder',
+          'Дизайн - инструменты и анализ',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,
@@ -45,401 +45,423 @@ class _FilterViewState extends State<FilterView> {
         backgroundColor: Color.fromRGBO(186, 85, 211, 1),
       ),
       body: SingleChildScrollView(
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color.fromRGBO(255, 105, 180, 1),
-              Color.fromRGBO(138, 43, 226, 1)
-            ],
-          ),
-        ),
         child: Container(
-          width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 40),
-              Text(
-                'Оцените Ваш уровень:',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ), Padding(
-                padding: EdgeInsets.only( left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Продвинутый профессионал',
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromRGBO(255, 105, 180, 1),
+                Color.fromRGBO(138, 43, 226, 1)
+              ],
+            ),
+          ),
+          child: Container(
+            width: double.infinity,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(height: 40),
+                Text(
+                  'Оцените Ваш уровень:',
                   style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 35,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                // value: _value1,
-                value: selectedOption1,
-                // onChanged: (bool? value) {
-                onChanged: (value) {
-                  setState(() {
-                    //  _value1 = value;
-                    selectedOption1 = value!;
-                    ubdateApp();
-                  });
-                },
-               
-              ),),
-               Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Любитель',
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Продвинутый профессионал',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    // value: _value1,
+                    value: selectedOption1,
+                    // onChanged: (bool? value) {
+                    onChanged: (value) {
+                      setState(() {
+                        //  _value1 = value;
+                        selectedOption1 = value!;
+                        ubdateApp();
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Любитель',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    // value: _value2,
+                    value: selectedOption2,
+                    // onChanged: (bool? value) {
+                    onChanged: (value) {
+                      setState(() {
+                        //  _value2 = value;
+                        selectedOption2 = value!;
+                        ubdateApp();
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Начинающий',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    // value: _value3,
+                    value: selectedOption3,
+                    // onChanged: (bool? value) {
+                    onChanged: (value) {
+                      setState(() {
+                        //  _value3 = value;
+                        selectedOption3 = value!;
+                        ubdateApp();
+                      });
+                    },
+                  ),
+                ),
+                SizedBox(height: 40),
+                Text(
+                  'Ваше устройство:',
                   style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 35,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                // value: _value2,
-                value: selectedOption2,
-                // onChanged: (bool? value) {
-                onChanged: (value) {
-                  setState(() {
-                    //  _value2 = value;
-                    selectedOption2 = value!;
-                    ubdateApp();
-                  });
-                },
-              ),), Padding(
-                padding: EdgeInsets.only( left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Начинающий',
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Компьютер на основе Windows',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value4,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value4 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Компьютер на основе Linux',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value5,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value5 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Компьютер на основе macOS',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value6,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value6 = value;
+                      });
+                    },
+                  ),
+                ),
+                SizedBox(height: 40),
+                Text(
+                  'Ваши цели: ',
                   style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 35,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                // value: _value3,
-                value: selectedOption3,
-                // onChanged: (bool? value) {
-                onChanged: (value) {
-                  setState(() {
-                    //  _value3 = value;
-                    selectedOption3 = value!;
-                    ubdateApp();
-                  });
-                },
-              ),),SizedBox(height: 40),
-              Text(
-                'Ваше устройство:',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Компьютер на основе Windows',
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Создание презентаций',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value7,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value7 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Разработка плакатов и брошюр',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value8,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value8 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Создание логотипов и брендинга',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value9,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value9 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Редактирование и обработка фотографий',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value10,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value10 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Создание веб-дизайна и интерфейса',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value11,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value11 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Разработка 3D-моделей и анимации',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value12,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value12 = value;
+                      });
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Создание типографии и макетирования',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value13,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value13 = value;
+                      });
+                    },
+                  ),
+                ),
+                SizedBox(height: 40),
+                Text(
+                  'Предпочитаемый бюджет: ',
                   style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 35,
                       fontWeight: FontWeight.w800,
                       color: Colors.white),
                 ),
-                value: _value4,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value4 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Компьютер на основе Linux',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'Полностью бесплатно',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value14,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value14 = value;
+                      });
+                    },
+                  ),
                 ),
-                value: _value5,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value5 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Компьютер на основе macOS',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'До 500 рублей в месяц',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value15,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value15 = value;
+                      });
+                    },
+                  ),
                 ),
-                value: _value6,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value6 = value;
-                  });
-                },
-              ),),SizedBox(height: 40),
-              Text(
-                'Ваши цели: ',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-               CheckboxListTile(
-                title: Text(
-                  'Создание презентаций',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'До 1000 рублей в месяц',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value16,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value16 = value;
+                      });
+                    },
+                  ),
                 ),
-                value: _value7,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value7 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Разработка плакатов и брошюр',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      'До 5000 рублей в месяц',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value17,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value17 = value;
+                      });
+                    },
+                  ),
                 ),
-                value: _value8,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value8 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Создание логотипов и брендинга',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                Padding(
+                  padding: EdgeInsets.only(left: 200, right: 150),
+                  child: CheckboxListTile(
+                    title: Text(
+                      '5000 рублей и более',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
+                    value: _value18,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _value18 = value;
+                      });
+                    },
+                  ),
                 ),
-                value: _value9,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value9 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Редактирование и обработка фотографий',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value10,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value10 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:CheckboxListTile(
-                title: Text(
-                  'Создание веб-дизайна и интерфейса',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value11,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value11 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:CheckboxListTile(
-                title: Text(
-                  'Разработка 3D-моделей и анимации',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value12,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value12 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:CheckboxListTile(
-                title: Text(
-                  'Создание типографии и макетирования',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value13,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value13 = value;
-                  });
-                },
-              ),),SizedBox(height: 40),
-              Text(
-                'Предпочитаемый бюджет: ',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white),
-              ),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'Полностью бесплатно',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value14,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value14 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'До 500 рублей в месяц',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value15,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value15 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'До 1000 рублей в месяц',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value16,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value16 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:
-              CheckboxListTile(
-                title: Text(
-                  'До 5000 рублей в месяц',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value17,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value17 = value;
-                  });
-                },
-              ),),Padding(
-                padding: EdgeInsets.only(left: 200, right: 150),
-              child:CheckboxListTile(
-                title: Text(
-                  '5000 рублей и более',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
-                ),
-                value: _value18,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _value18 = value;
-                  });
-                },
-              ),),
-              
-              SizedBox(height: 50),
-              ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.RESULT),
-                child: Container(
-                  width: 900,
-                  padding: EdgeInsets.all(15),
-                  child: Center(
-                    child: Text(
-                      'Узнать какой инструмент мне подходит',
-                      style:
-                          TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
+                SizedBox(height: 50),
+                ElevatedButton(
+                  onPressed: () => Get.toNamed(Routes.RESULT),
+                  child: Container(
+                    width: 900,
+                    padding: EdgeInsets.all(15),
+                    child: Center(
+                      child: Text(
+                        'Узнать какой инструмент мне подходит',
+                        style: TextStyle(
+                            fontSize: 40, fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        Color.fromRGBO(235, 82, 235, 1)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
                   ),
                 ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(235, 82, 235, 1)),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 40),
-            ],
+                SizedBox(height: 40),
+              ],
+            ),
           ),
         ),
-      ),
       ),
     );
   }
+
   void ubdateApp() {
     if (!selectedOption1) {
       // Показать заданное приложение для первого варианта
@@ -501,5 +523,3 @@ class _FilterViewState extends State<FilterView> {
     }
   }
 }
-
-

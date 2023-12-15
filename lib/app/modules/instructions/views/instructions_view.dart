@@ -11,7 +11,7 @@ class InstructionsView extends GetView<InstructionsController> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'DesignToolFinder',
+          'Дизайн - инструменты и анализ',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,
@@ -31,10 +31,9 @@ class InstructionsView extends GetView<InstructionsController> {
               ],
             ),
           ),
-           width: double.infinity,
+          width: double.infinity,
           child: Column(
-             mainAxisAlignment: MainAxisAlignment.center,
-             
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 40),
               Text(
@@ -44,71 +43,73 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),SizedBox(height: 20),
+              ),
+              SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only( left: 180, right: 150),
-              child: Text(
-                '1. Начните с изучения базовых принципов дизайна, таких как композиция, цветовая гамма, типографика и т.д.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                padding: EdgeInsets.only(left: 180, right: 150),
+                child: Text(
+                  '1. Начните с изучения базовых принципов дизайна, таких как композиция, цветовая гамма, типографика и т.д.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              ),
-               Padding(
+              Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '2. Изучите программы с пользовательским интерфейсом, такие как Canva чтобы создавать простые графические элементы.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '2. Изучите программы с пользовательским интерфейсом, такие как Canva чтобы создавать простые графические элементы.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-               ),
-               Padding(
+              Padding(
                 padding: EdgeInsets.only(top: 20, left: 60, right: 150),
-              child:
-              Text(
-                '3. Проходите онлайн-курсы или уроки по использованию выбранных программ и основам дизайна.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),), 
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '4. Экспериментируйте с различными инструментами и функциями программ для создания своих первых работ.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '3. Проходите онлайн-курсы или уроки по использованию выбранных программ и основам дизайна.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              
-              ),
-                
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-
-              Container(width:1000, height: 60,
-               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),color: Colors.pink),
-               child: Center(
-              child: Text(
-                'Инструменты, подходящие Вам: Canva',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '4. Экспериментируйте с различными инструментами и функциями программ для создания своих первых работ.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
-              ),),),),SizedBox(height: 40),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Container(
+                  width: 1000,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.pink),
+                  child: Center(
+                    child: Text(
+                      'Инструменты, подходящие Вам: Canva',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 40),
               Text(
                 'Инструкции для любителей дизайна:',
                 style: TextStyle(
@@ -119,69 +120,70 @@ class InstructionsView extends GetView<InstructionsController> {
               ),
               SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only( left: 200, right: 150),
-              child: Text(
-                '1. Расширьте свои знания в области дизайна, изучая продвинутые техники и методы работы с цветом, композицией и другими аспектами.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                padding: EdgeInsets.only(left: 200, right: 150),
+                child: Text(
+                  '1. Расширьте свои знания в области дизайна, изучая продвинутые техники и методы работы с цветом, композицией и другими аспектами.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              ),
-               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '2. Попробуйте использовать программы среднего уровня безопасности ... для создания более сложных проектов.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),
-               ),
-               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '3. Изучите возможности бесплатных программ и ресурсов для расширения своей библиотеки инструментов и материалов для дизайна.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '4. Присоединяйтесь к сообществам и форумам дизайнеров, чтобы обмениваться опытом и получать обратную связь от других участников.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '2. Попробуйте использовать программы среднего уровня безопасности ... для создания более сложных проектов.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              
-              ),
-              
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-
-              Container(width:1000, height: 60,
-               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),color: Colors.pink),
-               child: Center(
-              child: Text(
-                'Инструменты, подходящие Вам: ...',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '3. Изучите возможности бесплатных программ и ресурсов для расширения своей библиотеки инструментов и материалов для дизайна.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
-              ),),),),SizedBox(height: 40),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Text(
+                  '4. Присоединяйтесь к сообществам и форумам дизайнеров, чтобы обмениваться опытом и получать обратную связь от других участников.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Container(
+                  width: 1000,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.pink),
+                  child: Center(
+                    child: Text(
+                      'Инструменты, подходящие Вам: ...',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 40),
               Text(
                 'Инструкции для профессионалов:',
                 style: TextStyle(
@@ -189,76 +191,74 @@ class InstructionsView extends GetView<InstructionsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
-              ),SizedBox(height: 20),
+              ),
+              SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.only( left: 200, right: 150),
-              child: Text(
-                '1. Используйте профессиональные программы с высоким уровнем безопасности и поддержки, такие как Adobe Photoshop или Adobe Illustrator для создания сложных и масштабных проектов.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                padding: EdgeInsets.only(left: 200, right: 150),
+                child: Text(
+                  '1. Используйте профессиональные программы с высоким уровнем безопасности и поддержки, такие как Adobe Photoshop или Adobe Illustrator для создания сложных и масштабных проектов.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              ),
-               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '2. Изучите возможности интеграции различных программ и плагинов для оптимизации рабочего процесса и повышения производительности.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),
-               ),
-               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '3. Развивайте свои навыки в области анимации, 3D-моделирования или специализированного дизайна, используя соответствующие программы и инструменты.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-              Text(
-                '4. Участвуйте в профессиональных мероприятиях, конференциях и выставках, чтобы быть в курсе последних тенденций и новинок в области дизайна.',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '2. Изучите возможности интеграции различных программ и плагинов для оптимизации рабочего процесса и повышения производительности.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              
-              ),
-              
-              
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-              child:
-
-              Container(width:1000, height: 60,
-               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),color: Colors.pink),
-               child: Center(
-              child: Text(
-                'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                child: Text(
+                  '3. Развивайте свои навыки в области анимации, 3D-моделирования или специализированного дизайна, используя соответствующие программы и инструменты.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
                 ),
-              ),),),),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Text(
+                  '4. Участвуйте в профессиональных мероприятиях, конференциях и выставках, чтобы быть в курсе последних тенденций и новинок в области дизайна.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                child: Container(
+                  width: 1000,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.pink),
+                  child: Center(
+                    child: Text(
+                      'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               SizedBox(height: 40),
-             ],
-              
-            
+            ],
           ),
         ),
       ),

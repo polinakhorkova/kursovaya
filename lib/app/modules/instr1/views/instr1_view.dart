@@ -12,7 +12,7 @@ class Instr1View extends GetView<Instr1Controller> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'DesignToolFinder',
+          'Дизайн - инструменты и анализ',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,
@@ -89,7 +89,7 @@ class Instr1View extends GetView<Instr1Controller> {
                       color: Colors.white),
                 ),
               ),
-              SizedBox(height:40),
+              SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
                   launch('https://www.adobe.com/ru/products/photoshop.html');
