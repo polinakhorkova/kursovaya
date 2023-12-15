@@ -61,6 +61,20 @@ class _FilterViewState extends State<FilterView> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Text(
+                  'Ответьте на важные для вас вопросы',
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+                Text(
+                  'Звездочкой отмечены вопросы, обязательные для ответа',
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white),
+                ),
                 SizedBox(height: 40),
                 Text(
                   'Оцените Ваш уровень:',
@@ -137,7 +151,7 @@ class _FilterViewState extends State<FilterView> {
                 ),
                 SizedBox(height: 40),
                 Text(
-                  'Ваше устройство:',
+                  'Ваше устройство:*',
                   style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.w800,
