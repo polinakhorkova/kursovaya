@@ -1,8 +1,9 @@
 import 'package:get/get.dart';
 
+import '../modules/demo/bindings/demo_binding.dart';
+import '../modules/demo/views/demo_view.dart';
 import '../modules/filter/bindings/filter_binding.dart';
 import '../modules/filter/views/filter_view.dart';
-
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/instr1/bindings/instr1_binding.dart';
@@ -81,7 +82,6 @@ class AppPages {
       page: () => const InstrumentsView(),
       binding: InstrumentsBinding(),
     ),
-   
     GetPage(
       name: _Paths.RESULT,
       page: () => const ResultView(),
@@ -206,6 +206,11 @@ class AppPages {
       name: _Paths.RECOMMENDS,
       page: () => const RecommendsView(),
       binding: RecommendsBinding(),
+    ),
+    GetPage(
+      name: _Paths.DEMO,
+      page: () => const DemoView(),
+      binding: DemoBinding(),
     ),
   ];
 }

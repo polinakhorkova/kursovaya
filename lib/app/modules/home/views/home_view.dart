@@ -39,8 +39,11 @@ class HomeView extends GetView<HomeController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                     Padding(
+                        padding: EdgeInsets.only(left: 100),
+                        child:
                     ElevatedButton(
-                      onPressed: () => Get.toNamed(Routes.FILTER),
+                      onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
                       child: Container(
                         width: 250,
                         padding: EdgeInsets.all(15),
@@ -51,7 +54,7 @@ class HomeView extends GetView<HomeController> {
                                 fontSize: 30, fontWeight: FontWeight.w800),
                           ),
                         ),
-                      ),
+                      ), 
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
                             Color.fromRGBO(178, 124, 232, 1)),
@@ -62,10 +65,13 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                       ),
-                    ),
+                    ),),
                     SizedBox(height: 20),
+                     Padding(
+                        padding: EdgeInsets.only(left: 100),
+                        child:
                     ElevatedButton(
-                      onPressed: () => Get.toNamed(Routes.FILTER),
+                      onPressed: () => Get.toNamed(Routes.RECOMMENDS),
                       child: Container(
                         width: 250,
                         padding: EdgeInsets.all(15),
@@ -87,10 +93,13 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                       ),
-                    ),
+                    ),),
                     SizedBox(height: 20),
+                     Padding(
+                        padding: EdgeInsets.only(left: 100),
+                        child:
                     ElevatedButton(
-                      onPressed: () => Get.toNamed(Routes.FILTER),
+                      onPressed: () => Get.toNamed(Routes.DEMO),
                       child: Container(
                         width: 250,
                         padding: EdgeInsets.all(15),
@@ -112,8 +121,11 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                       ),
-                    ),
+                    ),),
                     SizedBox(height: 20),
+                     Padding(
+                        padding: EdgeInsets.only(left: 100),
+                        child:
                     ElevatedButton(
                       onPressed: () => Get.toNamed(Routes.INSTRUMENTS),
                       child: Container(
@@ -137,7 +149,7 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                       ),
-                    ),
+                    ),),
                   ],
                 ),
               ),
@@ -156,7 +168,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 10, right: 150),
-                        child: Text('С помощью данного инструмента Вы сможете',
+                        child: Text('С помощью данного инструмента',
                             style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.w800,
@@ -165,7 +177,7 @@ class HomeView extends GetView<HomeController> {
                       Padding(
                         padding: EdgeInsets.only(top: 10, right: 150),
                         child: Text(
-                            'подобрать приложения для разработки дизайна,',
+                            'Вы сможете подобрать приложения',
                             style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.w800,
@@ -173,7 +185,16 @@ class HomeView extends GetView<HomeController> {
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 10, right: 150),
-                        child: Text('который необходим именно вам!',
+                        child: Text(
+                            'для разработки дизайна, который',
+                            style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white)),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(top: 10, right: 150),
+                        child: Text('необходим именно вам!',
                             style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.w800,
@@ -185,13 +206,14 @@ class HomeView extends GetView<HomeController> {
                         child: ElevatedButton(
                           onPressed: () => Get.toNamed(Routes.FILTER),
                           child: Container(
+                            height: 68,
                             width: 800,
                             padding: EdgeInsets.all(15),
                             child: Center(
                               child: Text(
-                                'Узнать, какой инструмент подходит именно вам!',
+                                'Узнать, какой инструмент Вам подходит!',
                                 style: TextStyle(
-                                    fontSize: 30, fontWeight: FontWeight.w800),
+                                    fontSize: 25, fontWeight: FontWeight.w800),
                               ),
                             ),
                           ),
@@ -211,13 +233,74 @@ class HomeView extends GetView<HomeController> {
             ],
           ),
         ),
-        bottomNavigationBar: Container(
-          width: double.infinity,
+        
+      
+        bottomNavigationBar:  Container(
+         // width: 100,
+         height: 150,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Color.fromRGBO(178, 124, 232, 1),
           ),
-          padding: EdgeInsets.all(16.0),
-          child: Text('Container with text at the bottom'),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              
+              Column(
+                children: [
+              
+            Padding(padding: EdgeInsets.only(top: 20, left: 170, ),
+            
+            child: Text('Пермский Государственный Гуманитарно-Педагогический Университет',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+                                
+            Padding(padding: EdgeInsets.only(top: 10,left: 70, ),
+            
+            child: Text('Разработчики:',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+            Padding(padding: EdgeInsets.only(top: 10, left: 70, ),
+            
+            child: Text('Ахмедова П.С. ',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+             Padding(padding: EdgeInsets.only(top: 10, left: 70, ),
+            
+            child: Text('Хорькова П.А. ',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+                                
+                                
+                                ],
+                                
+              ),
+              Column(children: [
+                Padding(padding: EdgeInsets.only(top: 50, right: 700),
+            
+            child: Text('Контакты:',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+                                Padding(padding: EdgeInsets.only(top: 10, right: 700),
+            
+            child: Text('67026@pspu.ru',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+                                Padding(padding: EdgeInsets.only(top: 10, right: 700),
+            
+            child: Text('67038@pspu.ru',
+            style: TextStyle(fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),),),
+              ],),
+            
+            ],
+          ),
         ),
       ),
     );

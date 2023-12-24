@@ -34,6 +34,7 @@ abstract class Routes {
   static const INSTR22 = _Paths.INSTR22;
   static const INSTRUCTIONS = _Paths.INSTRUCTIONS;
   static const RECOMMENDS = _Paths.RECOMMENDS;
+  static const DEMO = _Paths.DEMO;
 }
 
 abstract class _Paths {
@@ -69,4 +70,5 @@ abstract class _Paths {
   static const INSTR22 = '/instr22';
   static const INSTRUCTIONS = '/instructions';
   static const RECOMMENDS = '/recommends';
+  static const DEMO = '/demo';
 }
