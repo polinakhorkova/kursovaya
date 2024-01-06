@@ -17,7 +17,7 @@ class Instr11View extends GetView<Instr11Controller> {
         ),
         centerTitle: true,
         toolbarHeight: 100,
-        backgroundColor: Color.fromRGBO(186, 85, 211, 1),
+        backgroundColor: Color.fromRGBO(178, 124, 232, 1),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -25,8 +25,8 @@ class Instr11View extends GetView<Instr11Controller> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color.fromRGBO(255, 105, 180, 1),
-              Color.fromRGBO(138, 43, 226, 1)
+              Color.fromRGBO(255, 153, 204, 1),
+              Color.fromRGBO(204, 153, 255, 1)
             ],
           ),
         ),
@@ -107,7 +107,7 @@ class Instr11View extends GetView<Instr11Controller> {
                 ),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(235, 82, 235, 1)),
+                      Color.fromRGBO(178, 124, 232, 1)),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),

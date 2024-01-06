@@ -16,7 +16,7 @@ class InstructionsView extends GetView<InstructionsController> {
         ),
         centerTitle: true,
         toolbarHeight: 100,
-        backgroundColor: Color.fromRGBO(186, 85, 211, 1),
+        backgroundColor: Color.fromRGBO(178, 124, 232, 1),
       ),
       // backgroundColor: Color.fromRGBO(247, 143, 195, 1),
       body: SingleChildScrollView(
@@ -26,8 +26,8 @@ class InstructionsView extends GetView<InstructionsController> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromRGBO(255, 105, 180, 1),
-                Color.fromRGBO(138, 43, 226, 1),
+                Color.fromRGBO(255, 153, 204, 1),
+                Color.fromRGBO(204, 153, 255, 1)
               ],
             ),
           ),
@@ -96,7 +96,7 @@ class InstructionsView extends GetView<InstructionsController> {
                   height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Colors.pink),
+                      color: Color.fromRGBO(178, 124, 232, 1)),
                   child: Center(
                     child: Text(
                       'Инструменты, подходящие Вам: Canva',
@@ -170,7 +170,7 @@ class InstructionsView extends GetView<InstructionsController> {
                   height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Colors.pink),
+                      color: Color.fromRGBO(178, 124, 232, 1)),
                   child: Center(
                     child: Text(
                       'Инструменты, подходящие Вам: ...',
@@ -244,7 +244,7 @@ class InstructionsView extends GetView<InstructionsController> {
                   height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Colors.pink),
+                      color: Color.fromRGBO(178, 124, 232, 1)),
                   child: Center(
                     child: Text(
                       'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator',
