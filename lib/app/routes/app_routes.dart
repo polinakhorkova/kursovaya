@@ -35,6 +35,7 @@ abstract class Routes {
   static const INSTRUCTIONS = _Paths.INSTRUCTIONS;
   static const RECOMMENDS = _Paths.RECOMMENDS;
   static const DEMO = _Paths.DEMO;
+  static const FILTER_D_E_M_O = _Paths.FILTER_D_E_M_O;
 }
 
 abstract class _Paths {
@@ -71,4 +72,5 @@ abstract class _Paths {
   static const INSTRUCTIONS = '/instructions';
   static const RECOMMENDS = '/recommends';
   static const DEMO = '/demo';
+  static const FILTER_D_E_M_O = '/filter-d-e-m-o';
 }

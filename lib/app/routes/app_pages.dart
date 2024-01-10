@@ -4,6 +4,8 @@ import '../modules/demo/bindings/demo_binding.dart';
 import '../modules/demo/views/demo_view.dart';
 import '../modules/filter/bindings/filter_binding.dart';
 import '../modules/filter/views/filter_view.dart';
+import '../modules/filterDEMO/bindings/filter_d_e_m_o_binding.dart';
+import '../modules/filterDEMO/views/filter_d_e_m_o_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/instr1/bindings/instr1_binding.dart';
@@ -211,6 +213,11 @@ class AppPages {
       name: _Paths.DEMO,
       page: () => const DemoView(),
       binding: DemoBinding(),
+    ),
+    GetPage(
+      name: _Paths.FILTER_D_E_M_O,
+      page: () =>  QuizPage(),
+      binding: FilterDEMOBinding(),
     ),
   ];
 }
