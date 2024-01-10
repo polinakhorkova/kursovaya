@@ -216,7 +216,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.FILTER_D_E_M_O,
-      page: () =>  QuizPage(),
+      page: () =>  FlutterDEMOView(),
       binding: FilterDEMOBinding(),
     ),
   ];

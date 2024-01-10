@@ -16,7 +16,7 @@ class HomeView extends GetView<HomeController> {
           leading: Padding(
             padding: EdgeInsets.only(left: 7),
             child: Image.asset('images/logotip-1_jpg.png',
-                width: 18, // задайте ширину изображения
+                width: 18, 
                 height: 18),
           ),
           title: const Text(
@@ -216,7 +216,7 @@ class HomeView extends GetView<HomeController> {
                       Padding(
                         padding: EdgeInsets.only(top: 7, right: 150),
                         child: ElevatedButton(
-                          onPressed: () => Get.toNamed(Routes.FILTER),
+                          onPressed: () => Get.toNamed(Routes.FILTER_D_E_M_O),
                           child: Container(
                             height: 68,
                             width: 800,

@@ -1,137 +1,218 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class FlutterDEMOView extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: QuizPage(),
-    );
-  }
+  _FlutterDEMOViewState createState() => _FlutterDEMOViewState();
+  
 }
 
-class QuizPage extends StatefulWidget {
-  @override
-  _QuizPageState createState() => _QuizPageState();
-}
-
-class _QuizPageState extends State<QuizPage> {
-  List<Map<String, dynamic>> questions = [
-    {
-      'question': 'Оцените ваш уровень',
-      'options': ['Профессионал', 'Любитель', 'Начинающий'],
-      'selected': '',
-    },
-    // Добавьте еще два вопроса аналогичным образом
-  ];
+class _FlutterDEMOViewState extends State<FlutterDEMOView> {
+  bool _isPro = false;
+  bool _isAmateur = false;
+  bool _isBeginner = false;
+  bool _isMac = false;
+  bool _isWindows = false;
+  bool _isLinux = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Quiz')),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: questions.length,
-              itemBuilder: (context, index) {
-                return QuestionWidget(
-                  question: questions[index]['question'],
-                  options: questions[index]['options'],
-                  onAnswerSelected: (selectedOption) {
-                    setState(() {
-                      questions[index]['selected'] = selectedOption;
-                    });
-                  },
-                  selectedOption: questions[index]['selected'],
-                );
-              },
+       appBar: AppBar(
+          leading: Padding(
+            padding: EdgeInsets.only(left: 7),
+            //child: Image.asset('images/logotip-1_jpg.png',
+             //   width: 18, 
+             //   height: 18),
+          ),
+          title: const Text(
+            'Дизайн - инструменты и анализ',
+            style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
+          ),
+          centerTitle: true,
+          toolbarHeight: 100,
+          backgroundColor: Color.fromRGBO(178, 124, 232, 1),
+        ),
+      body: Container(
+         decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromRGBO(255, 153, 204, 1),
+                Color.fromRGBO(204, 153, 255, 1)
+              ],
             ),
           ),
+      child: Column(
+        
+        children: <Widget>[
+          Text(
+                  'Оцените Ваш уровень:',
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+          CheckboxListTile( 
+            title: Text('Профи',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isPro,
+            onChanged: (bool? value) {
+              setState(() {
+                _isPro = value!;
+              });
+            },
+          ),
+          CheckboxListTile(
+            title: Text('Любитель',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isAmateur,
+            onChanged: (bool? value) {
+              setState(() {
+                _isAmateur = value!;
+              });
+            },
+          ),
+          CheckboxListTile(
+            title: Text('Начинающий',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isBeginner,
+            onChanged: (bool? value) {
+              setState(() {
+                _isBeginner = value!;
+              });
+            },
+          ),
+          Text(
+                  'Ваше устройство:',
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
+                ),
+          CheckboxListTile(
+            title: Text('Macbook',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isMac,
+            onChanged: (bool? value) {
+              setState(() {
+                _isMac = value!;
+              });
+            },
+          ),
+          CheckboxListTile(
+            title: Text('Windows',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isWindows,
+            onChanged: (bool? value) {
+              setState(() {
+                _isWindows = value!;
+              });
+            },
+          ),
+          CheckboxListTile(
+            title: Text('Linux',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+            value: _isLinux,
+            onChanged: (bool? value) {
+              setState(() {
+                _isLinux = value!;
+              });
+            },
+          ),
           ElevatedButton(
-            child: Text('Show Results'),
             onPressed: () {
-              String resultText = calculateResult(questions);
+              // Обработка введенных данных и переход к DEMOresultView
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => ResultPage(resultText: resultText),
-                ),
+                MaterialPageRoute(builder: (context) => DEMOresultView(isPro: _isPro, isAmateur: _isAmateur, isBeginner: _isBeginner, isMac: _isMac, isWindows: _isWindows, isLinux: _isLinux)),
               );
             },
+            child: Text('Показать результат',style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),),
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Color.fromRGBO(178, 124, 232, 1)),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
           ),
         ],
       ),
-    );
-  }
-
-  String calculateResult(List<Map<String, dynamic>> questions) {
-    // Расчет результатов
-    // Ваша логика расчета результата здесь
-    // Здесь приведен простой пример для демонстрации
-    if (questions.every((question) => question['selected'] == 'Профессионал')) {
-      return 'Подходит для вас приложение для дизайна';
-    } else {
-      return 'К сожалению, нет подходящего приложения для вас';
-    }
-  }
-}
-
-class QuestionWidget extends StatelessWidget {
-  final String question;
-  final List<String> options;
-  final Function(String) onAnswerSelected;
-  final String selectedOption;
-
-  QuestionWidget({required this.question, required this.options, required this.onAnswerSelected, required this.selectedOption});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Text(question, style: TextStyle(fontSize: 18)),
-        ),
-        Column(
-          children: options.map((option) {
-            return CheckboxListTile(
-              title: Text(option),
-              value: selectedOption == option,
-              onChanged: (value) {
-                onAnswerSelected(option);
-              },
-            );
-          }).toList(),
-        ),
-      ],
+    ),
     );
   }
 }
 
-class ResultPage extends StatelessWidget {
-  final String resultText;
+class DEMOresultView extends StatelessWidget {
+  final bool isPro;
+  final bool isAmateur;
+  final bool isBeginner;
+  final bool isMac;
+  final bool isWindows;
+  final bool isLinux;
 
-  ResultPage({required this.resultText});
+  const DEMOresultView({ Key? key, required this.isPro, required this.isAmateur, required this.isBeginner, required this.isMac, required this.isWindows, required this.isLinux}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Определение результата на основе входных данных
+    String result = 'Выбрано: ';
+    if (isPro) result += 'Профи, ';
+    if (isAmateur) result += 'Любитель, ';
+    if (isBeginner) result += 'Начинающий, ';
+    if (isMac) result += 'Macbook, ';
+    if (isWindows) result += 'Windows, ';
+    if (isLinux) result += 'Linux';
+
     return Scaffold(
-      appBar: AppBar(title: Text('Results')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text('Результаты теста:', style: TextStyle(fontSize: 20)),
-            SizedBox(height: 20),
-            Text(resultText),
-          ],
+      appBar: AppBar(
+          leading: Padding(
+            padding: EdgeInsets.only(left: 7),
+            //child: Image.asset('images/logotip-1_jpg.png',
+               // width: 18, 
+               // height: 18),
+          ),
+          title: const Text(
+            'Дизайн - инструменты и анализ',
+            style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
+          ),
+          centerTitle: true,
+          toolbarHeight: 100,
+          backgroundColor: Color.fromRGBO(178, 124, 232, 1),
         ),
+      body: Container(
+         decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromRGBO(255, 153, 204, 1),
+                Color.fromRGBO(204, 153, 255, 1)
+              ],
+            ),
+          ),
+        child: Center(
+        child: Text(result),
+      ),
       ),
     );
   }
