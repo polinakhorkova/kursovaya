@@ -49,7 +49,7 @@ class HomeView extends GetView<HomeController> {
                     Padding(
                       padding: EdgeInsets.only(left: 100),
                       child: ElevatedButton(
-                        onPressed: () => Get.toNamed(Routes.FILTER_D_E_M_O),
+                        onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
                         child: Container(
                           width: 250,
                           padding: EdgeInsets.all(15),
