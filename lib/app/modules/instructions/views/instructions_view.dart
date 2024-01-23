@@ -11,7 +11,7 @@ class InstructionsView extends GetView<InstructionsController> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Дизайн - инструменты и анализ',
+          'Справочник разработчика веб дизайна',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,

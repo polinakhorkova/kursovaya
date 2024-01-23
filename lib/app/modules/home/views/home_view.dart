@@ -20,7 +20,7 @@ class HomeView extends GetView<HomeController> {
                 height: 18),
           ),
           title: const Text(
-            'Дизайн - инструменты и анализ',
+            'Справочник разработчика веб дизайна',
             style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
           ),
           centerTitle: true,

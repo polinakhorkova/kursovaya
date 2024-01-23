@@ -12,7 +12,7 @@ class Instr1View extends GetView<Instr1Controller> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Дизайн - инструменты и анализ',
+          'Справочник разработчика веб дизайна',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,
