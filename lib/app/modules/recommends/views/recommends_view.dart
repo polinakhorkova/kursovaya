@@ -58,7 +58,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Высокая цена: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine.',
+                  '- Высокая цена: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe InDesign, Adobe X, Adobe Sensei',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -67,9 +67,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 70, right: 150),
                 child: Text(
-                  '- Средняя цена: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender, Canva, Crello, PicMonkey, LogoMaker.',
+                  "- Средняя цена:  Sketch, InVision, Figma, Canva, AixDesign, Uizard.io, Let's Enhance, Brandmark",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -78,9 +78,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 750),
+                padding: EdgeInsets.only(top: 20, left: 20, right: 280),
                 child: Text(
-                  '- Низкая цена: GameMaker Studio, Logomaker.com.',
+                  '- Низкая цена:  Khroma, Fronty, Slider AI, Lunacy, Autodraw, Fontjoy, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -102,7 +102,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Для компьютеров: Adobe Photoshop, Lightroom, GIMP, Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve, Adobe After Effects, Toon Boom Harmony, Blender, Adobe Illustrator, Unity, Unreal Engine.',
+                  "- Компьютер на основе Windows: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe X, Canva, Khroma, AixDesign, Slider AI, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -111,9 +111,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 190, right: 150),
                 child: Text(
-                  '- Для мобильных устройств: Canva, Crello, PicMonkey.',
+                  '- Компьютер на основе macOS: Sketch, Figma, InVision, Adobe InDesign, Adobe Sensei, Uizard.io, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -133,9 +133,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, right: 510),
                 child: Text(
-                  '- Заблокировано: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine.',
+                  '- Заблокировано:  Adobe X, InVision, Autodesk Autocad',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -146,7 +146,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Не заблокировано: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender, Canva, Crello, PicMonkey, LogoMaker, GameMaker Studio.',
+                  "- Не заблокировано:  Аdobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, Figma,  Canva, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -166,9 +166,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, right: 690),
                 child: Text(
-                  '- Легко доступно: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender, Canva, Crello, PicMonkey, LogoMaker, GameMaker Studio.',
+                  '- Легко доступно: Canva, Figma, Sketch',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -179,7 +179,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Ограниченно доступно: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine.',
+                  "- Ограниченно доступно: Аdobe Photoshop, Adobe Illustrator, CorelDraw, InVision, Autodesk Autocad, Adobe X, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -201,7 +201,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Профессиональный интерфейс: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine',
+                  "- Профессиональный интерфейс: Аdobe Photoshop ,Adobe Illustrator, Sketch, CorelDraw, InVision, Autodesk Autocad, Adobe X, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Uizard.io, Let's Enhance",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -210,9 +210,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 115, right: 150),
                 child: Text(
-                  '- Пользовательский интерфейс: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender, Canva, Crello, PicMonkey, LogoMaker, GameMaker Studio.',
+                  '- Пользовательский интерфейс: Figma, Canva, Lunacy, Autodraw, Fontjoy, Brandmark, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -234,7 +234,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Высокая поддержка: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine.',
+                  '- Высокая поддержка: Аdobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Figma, Adobe X, Adobe InDesign, Adobe Sensei, AixDesign, Slider AI, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -245,7 +245,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Ограниченная поддержка: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender, Canva, Crello, PicMonkey, LogoMaker, GameMaker Studio.',
+                  "- Ограниченная поддержка: Sketch, InVision, Canva, Khroma, Fronty, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -267,7 +267,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Высокий уровень безопасности: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine.',
+                  '- Высокий уровень безопасности:  Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Figma, Adobe X, Adobe InDesign, Adobe Sensei, AixDesign, Slider AI, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -276,9 +276,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, right: 190),
                 child: Text(
-                  '- Средний уровень безопасности: Lightroom, GIMP, Final Cut Pro, DaVinci Resolve, Toon Boom Harmony, Blender.',
+                  '- Средний уровень безопасности:  Sketch, InVision, Canva, Khroma, Fronty, Uizard.io',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -287,9 +287,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 35, right: 150),
                 child: Text(
-                  '- Низкий уровень безопасности: Canva, Crello, PicMonkey, LogoMaker, GameMaker Studio.',
+                  "- Низкий уровень безопасности:  Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -308,7 +308,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Требует лицензирования: Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Unity, Unreal Engine',
+                  '- Требует лицензирования: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe InDesign, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -319,7 +319,7 @@ class RecommendsView extends GetView<RecommendsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
-                  '- Бесплатное использование: Lightroom (требуется подписка), GIMP (бесплатное и открытое ПО), Final Cut Pro (требуется покупка), DaVinci Resolve (бесплатное и платное ПО), Toon Boom Harmony (требуется покупка), Blender (бесплатное и открытое ПО), Canva (бесплатное и платное ПО), Crello (бесплатное и платное ПО), PicMonkey (бесплатное и платное ПО), LogoMaker (бесплатное и платное ПО), GameMaker Studio (бесплатное и платное ПО).',
+                  "- Бесплатное использование: Sketch, InVision, Figma, Canva, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -336,9 +336,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 610),
+                padding: EdgeInsets.only(top: 20, left: 200),
                 child: Text(
-                  '1. Графический дизайн: Adobe Illustrator, CorelDRAW, Canva.',
+                  '1. Графический дизайн: Adobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, Figma, Adobe InDesign, Khroma, AixDesign, Lunacy, Fronty, Slider AI, Canva, Adobe X, Fontjoy, Brandmark, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -347,9 +347,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 840),
+                padding: EdgeInsets.only(top: 20, right: 100),
                 child: Text(
-                  '2. Веб-дизайн: Adobe XD, Sketch, Figma.',
+                  '2. Веб-дизайн: Figma, InVision, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Canva, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -358,9 +358,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 655),
+                padding: EdgeInsets.only(top: 20, right: 600),
                 child: Text(
-                  '3. Промышленный дизайн: AutoCAD, SolidWorks, Rhino.',
+                  '3. Промышленный дизайн: Autodesk Autocad',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -369,9 +369,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 635),
+                padding: EdgeInsets.only(top: 20, right: 430),
                 child: Text(
-                  '4. Модный дизайн: Adobe Photoshop, CLO 3D, Browzwear.',
+                  '4. Модный дизайн: Canva, Adobe Photoshop, Adobe Illustrator',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -380,9 +380,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 580),
+                padding: EdgeInsets.only(top: 20, right: 95),
                 child: Text(
-                  '5. Интерьерный дизайн: Autodesk Revit, SketchUp, Planner 5D.',
+                  "5. Редактирование фотографий:  Adobe Photoshop, Adobe X, Canva, Khroma, Let's Enhance",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -391,9 +391,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 610),
+                padding: EdgeInsets.only(top: 20, right: 750),
                 child: Text(
-                  '6. Упаковочный дизайн: ArtiosCAD, Esko Studio, Packmage.',
+                  '6. Видеомонтаж: Adobe X, Canva',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -402,9 +402,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 505),
+                padding: EdgeInsets.only(top: 20, right: 550),
                 child: Text(
-                  '7. Редактирование фотографий: Adobe Photoshop, Lightroom, GIMP.',
+                  '7. Анимационный дизайн: Adobe X, Canva, Sketch',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -413,9 +413,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 516),
+                padding: EdgeInsets.only(top: 20, right: 260),
                 child: Text(
-                  '8. Видеомонтаж: Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve.',
+                  '8. Графический дизайн для социальных сетей:  Canva, Adobe X, Brandmark',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -424,9 +424,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 410),
+                padding: EdgeInsets.only(top: 20, right: 480),
                 child: Text(
-                  '9. Анимационный дизайн: Adobe After Effects, Toon Boom Harmony, Blender.',
+                  '9. Дизайн логотипов: Adobe Illustrator, Canva, Brandmark',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
@@ -435,31 +435,9 @@ class RecommendsView extends GetView<RecommendsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 440),
+                padding: EdgeInsets.only(top: 20, right: 780),
                 child: Text(
-                  '10. Графический дизайн для социальных сетей: Canva, Crello, PicMonkey.',
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 500),
-                child: Text(
-                  '11. Дизайн логотипов: Adobe Illustrator, LogoMaker, Logomaker.com.',
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 650),
-                child: Text(
-                  '12. Дизайн игр: Unity, Unreal Engine, GameMaker Studio.',
+                  '10. Дизайн игр: Canva, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
