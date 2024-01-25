@@ -477,7 +477,7 @@ class DEMOresultView extends StatelessWidget {
    //if (isAmateur) result += 'Любитель, ';
     //if (isBeginner) result += 'Начинающий, ';
     //if (isMac) result += 'Macbook, ';
-    //if (isWindows == true && isPro == true) result += 'КОНСТАНТИН';
+    //if (isWindows == true && isPro == true) result += '';
 
     //ADOBEPHOTOSHOP
     if (isPro == true &&
