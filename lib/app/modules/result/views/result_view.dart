@@ -5,6 +5,7 @@ import 'package:kursovaya/app/routes/app_pages.dart';
 
 import '../controllers/result_controller.dart';
 
+
 class ResultView extends GetView<ResultController> {
   const ResultView({Key? key}) : super(key: key);
   @override

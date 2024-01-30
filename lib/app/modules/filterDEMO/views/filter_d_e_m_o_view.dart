@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:kursovaya/app/routes/app_pages.dart';
 
 class FlutterDEMOView extends StatefulWidget {
   @override
@@ -471,80 +474,35 @@ class DEMOresultView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Определение результата на основе входных данных
-    String result = 'Вам подходит: ';
-    //if (isPro) result += 'Профи, ';
-   //if (isAmateur) result += 'Любитель, ';
-    //if (isBeginner) result += 'Начинающий, ';
-    //if (isMac) result += 'Macbook, ';
-    //if (isWindows == true && isPro == true) result += '';
-
+    
+    String result = '';
+    
     //ADOBEPHOTOSHOP
     if (isPro == true &&
         isWindows == true &&
-        GraphicDesign == true &&
+        GraphicDesign == true || RedoPhotos == true || FashionDesign == true &&
         isExpensive == true) result += 'Adobe Photoshop';
-    if (isPro == true &&
-        isWindows == true &&
-        RedoPhotos == true &&
-        isExpensive == true) result += 'Adobe Photoshop';
-    if (isPro == true &&
-        isWindows == true &&
-        FashionDesign == true &&
-        isExpensive == true) result += 'Adobe Photoshop';
+    
     //CORELDRAW
     if (isAmateur == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isExpensive == true) result += 'CorelDraw';
+    
     //CANVA
     if (isBeginner == true &&
         isWindows == true &&
-        FashionDesign == true &&
+        FashionDesign == true || GraphicDesign == true || WebDesign == true || RedoPhotos == true || VideoMontage == true ||  Animation == true || GDforSocials == true || Logo == true || Games == true &&
         isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        GraphicDesign == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        WebDesign == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        RedoPhotos == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        VideoMontage == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        Animation == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        GDforSocials == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        Logo == true &&
-        isNormal == true) result += 'Canva';
-    if (isBeginner == true &&
-        isWindows == true &&
-        Games == true &&
-        isNormal == true) result += 'Canva';
+    
+
     //SKETCH
     if (isAmateur == true && 
     isMac == true && 
-    GraphicDesign == true && 
+    GraphicDesign == true || Animation == true && 
     isNormal == true)
       result += 'Sketch';
-      if (isAmateur == true && 
-      isMac == true && 
-      Animation == true && 
-      isNormal == true)
-      result += 'Sketch';
+      
     
     return Scaffold(
       appBar: AppBar(
@@ -573,14 +531,79 @@ class DEMOresultView extends StatelessWidget {
             ],
           ),
         ),
-        child: Center(
-          child: Text(
+        
+        child: Center (
+          child: Column(
+        
+       mainAxisAlignment: MainAxisAlignment.center,
+       
+        children:[
+          Text('Вам подходит:',
+          style: TextStyle(
+                 fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),),
+           SizedBox(height: 20),
+           Container(
+          height: 70,
+          
+          decoration: BoxDecoration(color:  Color.fromRGBO(178, 124, 232, 1),
+          borderRadius: BorderRadius.circular(10)),
+          
+          child: Column( 
+            children: [
+              Flexible( child: Padding(
+                padding: EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),child: Text(
+                
             result,
-            style: TextStyle(
-                fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
+            textAlign: TextAlign.center,
+             style: TextStyle(
+                 fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
+           ),
+           ),
+           ),
+           ],
           ),
+          ),
+          SizedBox(height: 100),
+          Padding(
+                      padding: EdgeInsets.only(),
+                      child: ElevatedButton(
+                        
+                        onPressed: () => Get.toNamed(Routes.INSTRUMENTS),
+                        child: Container(
+                          width: 400,
+                          padding: EdgeInsets.all(15),
+                          child: Center(
+                            child: Text(
+                              'Перейти к инструментам',
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.w800),
+                            ),
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Color.fromRGBO(178, 124, 232, 1)),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+          ],
         ),
-      ),
+          // child: 
+          //   Text(
+          //   result,
+          //   style: TextStyle(
+          //       fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
+          // ),
+        ),
+          
+        ),
+      
     );
   }
 }
