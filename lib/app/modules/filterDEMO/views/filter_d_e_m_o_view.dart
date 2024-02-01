@@ -538,7 +538,10 @@ class DEMOresultView extends StatelessWidget {
         WebDesign == true && isBeginner == true) {
       results.add('Figma');
     }
+
     String resultString = results.join(', ');
+    
+
 
     //ADOBEX
     if (isExpensive == true && isWindows == true && GraphicDesign == true ||
@@ -631,9 +634,9 @@ class DEMOresultView extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Container(
-                height: 100,
+                height: 80,
                 decoration: BoxDecoration(
-                    color: Color.fromRGBO(235, 127, 181, 1),
+                    color: Color.fromRGBO(255, 153, 204, 1),
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   children: [
@@ -645,7 +648,7 @@ class DEMOresultView extends StatelessWidget {
                           resultString,
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontSize: 55,
+                              fontSize: 35,
                               fontWeight: FontWeight.w800,
                               color: Colors.white),
                         ),
