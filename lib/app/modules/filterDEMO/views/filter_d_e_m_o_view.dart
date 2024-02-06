@@ -725,6 +725,7 @@ class DEMOresultView extends StatelessWidget {
         backgroundColor: Color.fromRGBO(178, 124, 232, 1),
       ),
       body: Container(
+        
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -747,8 +748,13 @@ class DEMOresultView extends StatelessWidget {
                     color: Colors.white),
               ),
               SizedBox(height: 40),
+            
+           // Expanded(
+            //  flex: 1,
+             // child: 
               Container(
-                height: 260,
+               
+                
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(178, 124, 232, 1),
                   borderRadius: BorderRadius.circular(10),
@@ -762,10 +768,16 @@ class DEMOresultView extends StatelessWidget {
                     ),
                   ],
                 ),
+                
                 child: Column(
+
                   children: [
-                    Flexible(
-                      child: Padding(
+                    SingleChildScrollView(
+                   child:
+                    Flexible( 
+                   // fit: FlexFit.tight, 
+                     
+                      child: Padding( 
                         padding: EdgeInsets.only(
                             top: 15, left: 15, right: 15, bottom: 10),
                         child: Text(
@@ -778,9 +790,14 @@ class DEMOresultView extends StatelessWidget {
                         ),
                       ),
                     ),
+                    ),
+                    
                   ],
                 ),
+           
               ),
+           //),
+             
               SizedBox(height: 100),
               Padding(
                 padding: EdgeInsets.only(),
@@ -817,6 +834,7 @@ class DEMOresultView extends StatelessWidget {
           //       fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
           // ),
         ),
+
       ),
     );
   }
