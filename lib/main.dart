@@ -7,7 +7,7 @@ import 'app/routes/app_pages.dart';
 void main() {
   runApp(
     GetMaterialApp(
-      title: "Дизайн - инструменты и анализ",
+      title: "Справочник разработчика веб - дизайна",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),

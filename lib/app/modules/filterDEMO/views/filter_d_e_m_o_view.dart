@@ -151,20 +151,27 @@ class _FlutterDEMOViewState extends State<FlutterDEMOView> {
                 child: Column(
                   children: [
                     RichText(
-  text: TextSpan(
-    //style: DefaultTextStyle.of(context).style,
-    children: <TextSpan>[
-    
-      TextSpan(text: 'Ваше устройство:', style: TextStyle(color: Colors.white,fontSize: 35,
-                            fontWeight: FontWeight.w800,)),
-      
-      TextSpan(text: '*', style: TextStyle(color: Color.fromARGB(255, 181, 55, 46),fontSize: 35,
-                            fontWeight: FontWeight.w800,),),
-    ],
-  ),
-),
-
-
+                      text: TextSpan(
+                        //style: DefaultTextStyle.of(context).style,
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: 'Ваше устройство:',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 35,
+                                fontWeight: FontWeight.w800,
+                              )),
+                          TextSpan(
+                            text: '*',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 181, 55, 46),
+                              fontSize: 35,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     CheckboxListTile(
                       title: Text(
                         'Компьютер на основе macOS',
@@ -706,7 +713,18 @@ class DEMOresultView extends StatelessWidget {
         isPro) {
       results.add('Midjourney');
     }
+
+    //ответ только на обязательный вопрос
+    if (isWindows) {
+      results.add(
+          "Adobe Photoshop, Abode Illustrator, CorelDraw, Autodesk Autocad, Adobe X, Canva, Khroma, AixDesign, Slider AI, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney");
+    }
+    if (isMac) {
+      results.add(
+          'Sketch, Figma, InVision, Adobe InDesign, Adobe Sensei, Uizard.io, Lunacy');
+    }
     String resultString = results.join(', ');
+
 
     return Scaffold(
       appBar: AppBar(
@@ -725,7 +743,6 @@ class DEMOresultView extends StatelessWidget {
         backgroundColor: Color.fromRGBO(178, 124, 232, 1),
       ),
       body: Container(
-        
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -748,13 +765,11 @@ class DEMOresultView extends StatelessWidget {
                     color: Colors.white),
               ),
               SizedBox(height: 40),
-            
-           // Expanded(
-            //  flex: 1,
-             // child: 
+
+              // Expanded(
+              //  flex: 1,
+              // child:
               Container(
-               
-                
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(178, 124, 232, 1),
                   borderRadius: BorderRadius.circular(10),
@@ -768,36 +783,31 @@ class DEMOresultView extends StatelessWidget {
                     ),
                   ],
                 ),
-                
                 child: Column(
-
                   children: [
                     SingleChildScrollView(
-                   child:
-                    Flexible( 
-                   // fit: FlexFit.tight, 
-                     
-                      child: Padding( 
-                        padding: EdgeInsets.only(
-                            top: 15, left: 15, right: 15, bottom: 10),
-                        child: Text(
-                          resultString,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 45,
-                              fontWeight: FontWeight.w800,
-                              color: Colors.white),
+                      child: Flexible(
+                        // fit: FlexFit.tight,
+
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
+                          child: Text(
+                            resultString,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 45,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                    ),
-                    
                   ],
                 ),
-           
               ),
-           //),
-             
+              //),
+
               SizedBox(height: 100),
               Padding(
                 padding: EdgeInsets.only(),
@@ -834,7 +844,6 @@ class DEMOresultView extends StatelessWidget {
           //       fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
           // ),
         ),
-
       ),
     );
   }
