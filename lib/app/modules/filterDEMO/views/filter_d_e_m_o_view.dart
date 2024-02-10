@@ -27,6 +27,7 @@ class _FlutterDEMOViewState extends State<FlutterDEMOView> {
   bool _isCheap = false;
   bool _isNormal = false;
   bool _isExpensive = false;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -553,7 +554,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //CORELDRAW
-    if (isAmateur == true &&
+   else if (isAmateur == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isExpensive == true) {
@@ -561,7 +562,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //CANVA
-    if (isBeginner == true && isWindows == true && FashionDesign == true ||
+    else if (isBeginner == true && isWindows == true && FashionDesign == true ||
         GraphicDesign == true ||
         WebDesign == true ||
         RedoPhotos == true ||
@@ -574,20 +575,20 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //SKETCH
-    if (isAmateur == true && isMac == true && GraphicDesign == true ||
+   else  if (isAmateur == true && isMac == true && GraphicDesign == true ||
         Animation == true && isNormal == true) {
       results.add('Sketch');
     }
 
     //ADOBE ILUUSTRATOR
-    if (isPro == true && isWindows == true && GraphicDesign == true ||
+    else if (isPro == true && isWindows == true && GraphicDesign == true ||
         FashionDesign == true ||
         Logo == true && isExpensive == true) {
       results.add('Adobe Illustrator');
     }
 
     //INVISION
-    if (isExpensive == true &&
+   else  if (isExpensive == true &&
         isMac == true &&
         WebDesign == true &&
         isPro == true) {
@@ -595,7 +596,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //AUTODESKAUTOCAD
-    if (isExpensive == true &&
+   else  if (isExpensive == true &&
         isWindows == true &&
         PromDesign == true &&
         isPro == true) {
@@ -603,13 +604,13 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //FIGMA
-    if (isNormal == true && isMac == true && GraphicDesign == true ||
+    else if (isNormal == true && isMac == true && GraphicDesign == true ||
         WebDesign == true && isBeginner == true) {
       results.add('Figma');
     }
 
     //ADOBEX
-    if (isExpensive == true && isWindows == true && GraphicDesign == true ||
+   else  if (isExpensive == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true ||
         RedoPhotos == true ||
         VideoMontage == true ||
@@ -620,7 +621,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //ADOBEINDESIGN
-    if (isExpensive == true &&
+    else if (isExpensive == true &&
         isMac == true &&
         GraphicDesign == true &&
         isPro == true) {
@@ -628,13 +629,13 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //KHROMA
-    if (isCheap == true && isWindows == true && GraphicDesign == true ||
+    else if (isCheap == true && isWindows == true && GraphicDesign == true ||
         RedoPhotos == true && isAmateur == true) {
       results.add('Khroma');
     }
 
     //ADOBESENSEI
-    if (isExpensive == true &&
+    else if (isExpensive == true &&
         isMac == true &&
         GraphicDesign == true &&
         isPro == true) {
@@ -642,31 +643,31 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //AIXDESIGN
-    if (isNormal == true && isWindows == true && GraphicDesign == true ||
+    else if (isNormal == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('AixDesign');
     }
 
     //FRONTY
-    if (isBeginner == true && isWindows == true && GraphicDesign == true ||
+   else  if (isBeginner == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isAmateur == true) {
       results.add('Fronty');
     }
 
     //SLIDERAI
-    if (isCheap == true && isWindows == true && GraphicDesign == true ||
+    else if (isCheap == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('Slider AI');
     }
 
     //LUNACY
-    if (isCheap == true && isMac == true && GraphicDesign == true ||
+    else if (isCheap == true && isMac == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('Lunacy');
     }
 
     //UIZARD.IO
-    if (isNormal == true &&
+    else if (isNormal == true &&
         isMac == true &&
         WebDesign == true &&
         isPro == true) {
@@ -675,7 +676,7 @@ class DEMOresultView extends StatelessWidget {
 
     //AUTODRAW
 
-    if (isCheap == true &&
+    else if (isCheap == true &&
             isWindows == true &&
             isBeginner == true &&
             WebDesign == true ||
@@ -684,7 +685,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //LETSENHANCE
-    if (isNormal == true &&
+    else if (isNormal == true &&
         isWindows == true &&
         RedoPhotos == true &&
         isPro == true) {
@@ -692,7 +693,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //FONTJOY
-    if (isCheap == true &&
+    else if (isCheap == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isAmateur == true) {
@@ -700,14 +701,14 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //BRANDMARK
-    if (isNormal == true && isWindows == true && GraphicDesign == true ||
+   else  if (isNormal == true && isWindows == true && GraphicDesign == true ||
         GDforSocials == true ||
         Logo == true && isAmateur) {
       results.add('Brandmark');
     }
 
     //MIDJOURNEY
-    if (isCheap == true &&
+    else if (isCheap == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isPro) {
@@ -715,15 +716,26 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //ответ только на обязательный вопрос
-    if (isWindows) {
+    else if (isWindows) {
       results.add(
           "Adobe Photoshop, Abode Illustrator, CorelDraw, Autodesk Autocad, Adobe X, Canva, Khroma, AixDesign, Slider AI, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney");
     }
-    if (isMac) {
+    else if (isMac) {
       results.add(
           'Sketch, Figma, InVision, Adobe InDesign, Adobe Sensei, Uizard.io, Lunacy');
     }
+     else {
+  results.add('Нет подходящего результата');
+}
+
     String resultString = results.join(', ');
+
+
+
+
+
+
+
 
 
     return Scaffold(
