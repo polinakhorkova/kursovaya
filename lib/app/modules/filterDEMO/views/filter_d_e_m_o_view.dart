@@ -49,7 +49,7 @@ class _FlutterDEMOViewState extends State<FlutterDEMOView> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          width: 1550,
+          width: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -703,15 +703,15 @@ class DEMOresultView extends StatelessWidget {
     //BRANDMARK
    else  if (isNormal == true && isWindows == true && GraphicDesign == true ||
         GDforSocials == true ||
-        Logo == true && isAmateur) {
+        Logo == true && isAmateur == true ) {
       results.add('Brandmark');
     }
 
     //MIDJOURNEY
-    else if (isCheap == true &&
-        isWindows == true &&
-        GraphicDesign == true &&
-        isPro) {
+    else if (isCheap == true  &&
+        isWindows  == true &&
+        GraphicDesign  == true &&
+        isPro == true ) {
       results.add('Midjourney');
     }
 
@@ -831,6 +831,32 @@ class DEMOresultView extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'Перейти к инструментам',
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        Color.fromRGBO(178, 124, 232, 1)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                ),
+              ),SizedBox(height: 50),
+              Padding(
+                padding: EdgeInsets.only(),
+                child: ElevatedButton(
+                  onPressed: () => Get.toNamed(Routes.HOME),
+                  child: Container(
+                    width: 400,
+                    padding: EdgeInsets.all(15),
+                    child: Center(
+                      child: Text(
+                        'На главную страницу',
                         style: TextStyle(
                             fontSize: 30, fontWeight: FontWeight.w800),
                       ),
