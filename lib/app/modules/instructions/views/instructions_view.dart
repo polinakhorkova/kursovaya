@@ -57,7 +57,7 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 180, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Text(
                   '2. Изучите программы с пользовательским интерфейсом, такие как Canva чтобы создавать простые графические элементы.',
                   style: TextStyle(
@@ -68,7 +68,7 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 155, right: 150),
+                padding: EdgeInsets.only(top: 20,  right: 95),
                 child: Text(
                   '3. Проходите онлайн-курсы или уроки по использованию выбранных программ и основам дизайна.',
                   style: TextStyle(
@@ -79,7 +79,7 @@ class InstructionsView extends GetView<InstructionsController> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 180, right: 150),
+                padding: EdgeInsets.only(top: 20, left: 190, right: 135),
                 child: Text(
                   '4. Экспериментируйте с различными инструментами и функциями программ для создания своих первых работ.',
                   style: TextStyle(
