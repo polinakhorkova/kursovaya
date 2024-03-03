@@ -553,7 +553,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //CORELDRAW
-    else if (isAmateur == true &&
+     if (isAmateur == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isExpensive == true) {
@@ -561,7 +561,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //CANVA
-    else if (isBeginner == true && isWindows == true && FashionDesign == true ||
+     if (isBeginner == true && isWindows == true && FashionDesign == true ||
         GraphicDesign == true ||
         WebDesign == true ||
         RedoPhotos == true ||
@@ -574,20 +574,20 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //SKETCH
-    else if (isAmateur == true && isMac == true && GraphicDesign == true ||
+     if (isAmateur == true && isMac == true && GraphicDesign == true ||
         Animation == true && isNormal == true) {
       results.add('Sketch');
     }
 
     //ADOBE ILUUSTRATOR
-    else if (isPro == true && isWindows == true && GraphicDesign == true ||
+     if (isPro == true && isWindows == true && GraphicDesign == true ||
         FashionDesign == true ||
         Logo == true && isExpensive == true) {
       results.add('Adobe Illustrator');
     }
 
     //INVISION
-    else if (isExpensive == true &&
+     if (isExpensive == true &&
         isMac == true &&
         WebDesign == true &&
         isPro == true) {
@@ -603,13 +603,13 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //FIGMA
-    else if (isNormal == true && isMac == true && GraphicDesign == true ||
+     if (isNormal == true && isMac == true && GraphicDesign == true ||
         WebDesign == true && isBeginner == true) {
       results.add('Figma');
     }
 
     //ADOBEX
-    else if (isExpensive == true &&
+     if (isExpensive == true &&
             isWindows == true &&
             GraphicDesign == true ||
         WebDesign == true ||
@@ -622,7 +622,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //ADOBEINDESIGN
-    else if (isExpensive == true &&
+     if (isExpensive == true &&
         isMac == true &&
         GraphicDesign == true &&
         isPro == true) {
@@ -630,13 +630,13 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //KHROMA
-    else if (isCheap == true && isWindows == true && GraphicDesign == true ||
+     if (isCheap == true && isWindows == true && GraphicDesign == true ||
         RedoPhotos == true && isAmateur == true) {
       results.add('Khroma');
     }
 
     //ADOBESENSEI
-    else if (isExpensive == true &&
+     if (isExpensive == true &&
         isMac == true &&
         GraphicDesign == true &&
         isPro == true) {
@@ -644,31 +644,31 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //AIXDESIGN
-    else if (isNormal == true && isWindows == true && GraphicDesign == true ||
+     if (isNormal == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('AixDesign');
     }
 
     //FRONTY
-    else if (isBeginner == true && isWindows == true && GraphicDesign == true ||
+     if (isBeginner == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isAmateur == true) {
       results.add('Fronty');
     }
 
     //SLIDERAI
-    else if (isCheap == true && isWindows == true && GraphicDesign == true ||
+     if (isCheap == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('Slider AI');
     }
 
     //LUNACY
-    else if (isCheap == true && isMac == true && GraphicDesign == true ||
+     if (isCheap == true && isMac == true && GraphicDesign == true ||
         WebDesign == true && isPro == true) {
       results.add('Lunacy');
     }
 
     //UIZARD.IO
-    else if (isNormal == true &&
+     if (isNormal == true &&
         isMac == true &&
         WebDesign == true &&
         isPro == true) {
@@ -677,7 +677,7 @@ class DEMOresultView extends StatelessWidget {
 
     //AUTODRAW
 
-    else if (isCheap == true &&
+     if (isCheap == true &&
             isWindows == true &&
             isBeginner == true &&
             WebDesign == true ||
@@ -686,7 +686,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //LETSENHANCE
-    else if (isNormal == true &&
+     if (isNormal == true &&
         isWindows == true &&
         RedoPhotos == true &&
         isPro == true) {
@@ -694,7 +694,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //FONTJOY
-    else if (isCheap == true &&
+     if (isCheap == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isAmateur == true) {
@@ -702,14 +702,15 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //BRANDMARK
-    else if (isNormal == true && isWindows == true && GraphicDesign == true ||
+     if (isNormal == true && isWindows == true && GraphicDesign == true ||
         GDforSocials == true ||
         Logo == true && isAmateur == true) {
       results.add('Brandmark');
     }
 
     //MIDJOURNEY
-    else if (isCheap == true &&
+    if (isCheap == true &&
+    
         isWindows == true &&
         GraphicDesign == true &&
         isPro == true) {
