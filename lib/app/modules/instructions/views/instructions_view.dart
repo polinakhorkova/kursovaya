@@ -92,12 +92,15 @@ class InstructionsView extends GetView<InstructionsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Container(
-                  width: 1000,
+               
                   height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromRGBO(178, 124, 232, 1)),
-                  child: Center(
+                      color: Color.fromRGBO(178, 124, 232, 0.4)),
+                      child: Column(
+                  children: [ Flexible(child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
                     child: Text(
                       'Инструменты, подходящие Вам: Canva, Figma, AutoDraw',
                       style: TextStyle(
@@ -106,9 +109,9 @@ class InstructionsView extends GetView<InstructionsController> {
                         color: Colors.white,
                       ),
                     ),
-                  ),
+                      ),),],
                 ),
-              ),
+              ),),
               SizedBox(height: 40),
               Text(
                 'Инструкции для любителей дизайна:',
@@ -166,12 +169,14 @@ class InstructionsView extends GetView<InstructionsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Container(
-                  width: 1100,
-                  height: 60,
+                 
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromRGBO(178, 124, 232, 1)),
-                  child: Center(
+                      color: Color.fromRGBO(178, 124, 232, 0.4)),
+                  child: Column(
+                  children: [ Flexible(child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
                     child: Text(
                       'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, InVision',
                       style: TextStyle(
@@ -179,7 +184,7 @@ class InstructionsView extends GetView<InstructionsController> {
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
                       ),
-                    ),
+                    ),),),],
                   ),
                 ),
               ),
@@ -240,12 +245,14 @@ class InstructionsView extends GetView<InstructionsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Container(
-                  width: 1100,
-                  height: 60,
+                 
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromRGBO(178, 124, 232, 1)),
-                  child: Center(
+                      color: Color.fromRGBO(178, 124, 232, 0.4)),
+                  child: Column(
+                  children: [ Flexible(child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
                     child: Text(
                       'Инструменты, подходящие Вам: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, CorelDraw',
                       style: TextStyle(
@@ -253,7 +260,7 @@ class InstructionsView extends GetView<InstructionsController> {
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
                       ),
-                    ),
+                    ),),),],
                   ),
                 ),
               ),

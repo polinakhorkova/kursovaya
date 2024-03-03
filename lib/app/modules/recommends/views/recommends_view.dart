@@ -46,7 +46,12 @@ class RecommendsView extends GetView<RecommendsController> {
               ),
               SizedBox(
                 height: 20,
-              ),
+              ), Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child: Column(children: [
               Text(
                 'По ценам:',
                 style: TextStyle(
@@ -54,10 +59,11 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+              
+                 Text(
                   '- Высокая цена: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe InDesign, Adobe X, Adobe Sensei',
                   style: TextStyle(
                     fontSize: 25,
@@ -65,10 +71,8 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 70, right: 150),
-                child: Text(
+              
+              Text(
                   "- Средняя цена:  Sketch, InVision, Figma, Canva, AixDesign, Uizard.io, Let's Enhance, Brandmark",
                   style: TextStyle(
                     fontSize: 25,
@@ -76,10 +80,8 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 20, right: 280),
-                child: Text(
+              
+               Text(
                   '- Низкая цена:  Khroma, Fronty, Slider AI, Lunacy, Autodraw, Fontjoy, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
@@ -87,10 +89,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child:Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child: Column(children: [
               Text(
                 'По устройству:',
                 style: TextStyle(
@@ -98,10 +105,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   "- Компьютер на основе Windows: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe X, Canva, Khroma, AixDesign, Slider AI, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -109,10 +116,8 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 190, right: 150),
-                child: Text(
+              
+               Text(
                   '- Компьютер на основе macOS: Sketch, Figma, InVision, Adobe InDesign, Adobe Sensei, Uizard.io, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
@@ -120,10 +125,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child:Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child: Column(children: [
               Text(
                 'По блокировке на территории РФ:',
                 style: TextStyle(
@@ -131,10 +141,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 510),
-                child: Text(
+               Text(
                   '- Заблокировано:  Adobe X, InVision, Autodesk Autocad',
                   style: TextStyle(
                     fontSize: 25,
@@ -142,10 +152,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   "- Не заблокировано:  Аdobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, Figma,  Canva, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -153,10 +160,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child:Column(children: [
               Text(
                 'По доступности:',
                 style: TextStyle(
@@ -164,10 +176,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 690),
-                child: Text(
+               Text(
                   '- Легко доступно: Canva, Figma, Sketch',
                   style: TextStyle(
                     fontSize: 25,
@@ -175,10 +187,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   "- Ограниченно доступно: Аdobe Photoshop, Adobe Illustrator, CorelDraw, InVision, Autodesk Autocad, Adobe X, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -186,10 +195,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child:Column(children: [
               Text(
                 'По интерфейсу:',
                 style: TextStyle(
@@ -197,10 +211,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   "- Профессиональный интерфейс: Аdobe Photoshop ,Adobe Illustrator, Sketch, CorelDraw, InVision, Autodesk Autocad, Adobe X, Adobe InDesign, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Uizard.io, Let's Enhance",
                   style: TextStyle(
                     fontSize: 25,
@@ -208,10 +222,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 115, right: 150),
-                child: Text(
+               Text(
                   '- Пользовательский интерфейс: Figma, Canva, Lunacy, Autodraw, Fontjoy, Brandmark, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
@@ -219,10 +230,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child:Column(children: [
               Text(
                 'По поддержке:',
                 style: TextStyle(
@@ -230,10 +246,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+              Text(
                   '- Высокая поддержка: Аdobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Figma, Adobe X, Adobe InDesign, Adobe Sensei, AixDesign, Slider AI, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
@@ -241,10 +257,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   "- Ограниченная поддержка: Sketch, InVision, Canva, Khroma, Fronty, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -252,10 +265,15 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
-              ),
+              ),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child:Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child: Column(children: [
               Text(
                 'По безопасности:',
                 style: TextStyle(
@@ -263,10 +281,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+              Text(
                   '- Высокий уровень безопасности:  Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Figma, Adobe X, Adobe InDesign, Adobe Sensei, AixDesign, Slider AI, Lunacy',
                   style: TextStyle(
                     fontSize: 25,
@@ -274,10 +292,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 190),
-                child: Text(
+              Text(
                   '- Средний уровень безопасности:  Sketch, InVision, Canva, Khroma, Fronty, Uizard.io',
                   style: TextStyle(
                     fontSize: 25,
@@ -285,10 +300,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 35, right: 150),
-                child: Text(
+               Text(
                   "- Низкий уровень безопасности:  Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -296,7 +308,13 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
+              SizedBox(height: 20),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child:Column(children: [
               Text(
                 'По лицензированию:',
                 style: TextStyle(
@@ -304,10 +322,10 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+               Text(
                   '- Требует лицензирования: Adobe Photoshop, Adobe Illustrator, CorelDraw, Autodesk Autocad, Adobe InDesign, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
@@ -315,10 +333,7 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200, right: 150),
-                child: Text(
+              Text(
                   "- Бесплатное использование: Sketch, InVision, Figma, Canva, Khroma, Adobe Sensei, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney",
                   style: TextStyle(
                     fontSize: 25,
@@ -326,7 +341,12 @@ class RecommendsView extends GetView<RecommendsController> {
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),SizedBox(height: 20),Container(
+                width: 1400,
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(178, 124, 232, 0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ), child: Padding(padding: EdgeInsets.only(top:20,left:20,bottom: 20,right: 20), child:Column(children: [
               Text(
                 'По целям:',
                 style: TextStyle(
@@ -334,117 +354,90 @@ class RecommendsView extends GetView<RecommendsController> {
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
+              ), SizedBox(
+                height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 200),
-                child: Text(
-                  '1. Графический дизайн: Adobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, Figma, Adobe InDesign, Khroma, AixDesign, Lunacy, Fronty, Slider AI, Canva, Adobe X, Fontjoy, Brandmark, Midjourney',
+            Text(
+                  '- Графический дизайн: Adobe Photoshop, Adobe Illustrator, Sketch, CorelDraw, Figma, Adobe InDesign, Khroma, AixDesign, Lunacy, Fronty, Slider AI, Canva, Adobe X, Fontjoy, Brandmark, Midjourney',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 100),
-                child: Text(
-                  '2. Веб-дизайн: Figma, InVision, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Canva, Adobe X',
+               Text(
+                  '- Веб-дизайн: Figma, InVision, AixDesign, Fronty, Slider AI, Lunacy, Uizard.io, Canva, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 600),
-                child: Text(
-                  '3. Промышленный дизайн: Autodesk Autocad',
+            Text(
+                  '- Промышленный дизайн: Autodesk Autocad',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 430),
-                child: Text(
-                  '4. Модный дизайн: Canva, Adobe Photoshop, Adobe Illustrator',
+               Text(
+                  '- Модный дизайн: Canva, Adobe Photoshop, Adobe Illustrator',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 95),
-                child: Text(
-                  "5. Редактирование фотографий:  Adobe Photoshop, Adobe X, Canva, Khroma, Let's Enhance",
+               Text(
+                  "- Редактирование фотографий:  Adobe Photoshop, Adobe X, Canva, Khroma, Let's Enhance",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 750),
-                child: Text(
-                  '6. Видеомонтаж: Adobe X, Canva',
+              Text(
+                  '- Видеомонтаж: Adobe X, Canva',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 550),
-                child: Text(
-                  '7. Анимационный дизайн: Adobe X, Canva, Sketch',
+               Text(
+                  '- Анимационный дизайн: Adobe X, Canva, Sketch',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 260),
-                child: Text(
-                  '8. Графический дизайн для социальных сетей:  Canva, Adobe X, Brandmark',
+              Text(
+                  '- Графический дизайн для социальных сетей:  Canva, Adobe X, Brandmark',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 480),
-                child: Text(
-                  '9. Дизайн логотипов: Adobe Illustrator, Canva, Brandmark',
+             Text(
+                  '- Дизайн логотипов: Adobe Illustrator, Canva, Brandmark',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, right: 780),
-                child: Text(
-                  '10. Дизайн игр: Canva, Adobe X',
+               Text(
+                  '- Дизайн игр: Canva, Adobe X',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                   ),
                 ),
-              ),
+              ],),),),
               SizedBox(
                 height: 20,
               ),
