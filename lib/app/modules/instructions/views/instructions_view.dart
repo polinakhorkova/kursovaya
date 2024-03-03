@@ -169,7 +169,8 @@ class InstructionsView extends GetView<InstructionsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Container(
-                 
+               //  width: 1230,
+                  height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Color.fromRGBO(178, 124, 232, 0.4)),
@@ -245,7 +246,8 @@ class InstructionsView extends GetView<InstructionsController> {
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 200, right: 150),
                 child: Container(
-                 
+                  //width: 1100,
+                 height: 60,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Color.fromRGBO(178, 124, 232, 0.4)),
@@ -260,7 +262,9 @@ class InstructionsView extends GetView<InstructionsController> {
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
                       ),
-                    ),),),],
+                    ),),
+                  ),
+                  ],
                   ),
                 ),
               ),

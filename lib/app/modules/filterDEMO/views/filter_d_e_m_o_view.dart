@@ -27,7 +27,6 @@ class _FlutterDEMOViewState extends State<FlutterDEMOView> {
   bool _isCheap = false;
   bool _isNormal = false;
   bool _isExpensive = false;
-  
 
   @override
   Widget build(BuildContext context) {
@@ -554,7 +553,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //CORELDRAW
-   else if (isAmateur == true &&
+    else if (isAmateur == true &&
         isWindows == true &&
         GraphicDesign == true &&
         isExpensive == true) {
@@ -575,7 +574,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //SKETCH
-   else  if (isAmateur == true && isMac == true && GraphicDesign == true ||
+    else if (isAmateur == true && isMac == true && GraphicDesign == true ||
         Animation == true && isNormal == true) {
       results.add('Sketch');
     }
@@ -588,7 +587,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //INVISION
-   else  if (isExpensive == true &&
+    else if (isExpensive == true &&
         isMac == true &&
         WebDesign == true &&
         isPro == true) {
@@ -596,7 +595,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //AUTODESKAUTOCAD
-   else  if (isExpensive == true &&
+    else if (isExpensive == true &&
         isWindows == true &&
         PromDesign == true &&
         isPro == true) {
@@ -610,7 +609,9 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //ADOBEX
-   else  if (isExpensive == true && isWindows == true && GraphicDesign == true ||
+    else if (isExpensive == true &&
+            isWindows == true &&
+            GraphicDesign == true ||
         WebDesign == true ||
         RedoPhotos == true ||
         VideoMontage == true ||
@@ -649,7 +650,7 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //FRONTY
-   else  if (isBeginner == true && isWindows == true && GraphicDesign == true ||
+    else if (isBeginner == true && isWindows == true && GraphicDesign == true ||
         WebDesign == true && isAmateur == true) {
       results.add('Fronty');
     }
@@ -701,17 +702,17 @@ class DEMOresultView extends StatelessWidget {
     }
 
     //BRANDMARK
-   else  if (isNormal == true && isWindows == true && GraphicDesign == true ||
+    else if (isNormal == true && isWindows == true && GraphicDesign == true ||
         GDforSocials == true ||
-        Logo == true && isAmateur == true ) {
+        Logo == true && isAmateur == true) {
       results.add('Brandmark');
     }
 
     //MIDJOURNEY
-    else if (isCheap == true  &&
-        isWindows  == true &&
-        GraphicDesign  == true &&
-        isPro == true ) {
+    else if (isCheap == true &&
+        isWindows == true &&
+        GraphicDesign == true &&
+        isPro == true) {
       results.add('Midjourney');
     }
 
@@ -719,32 +720,19 @@ class DEMOresultView extends StatelessWidget {
     else if (isWindows) {
       results.add(
           "Adobe Photoshop, Abode Illustrator, CorelDraw, Autodesk Autocad, Adobe X, Canva, Khroma, AixDesign, Slider AI, Autodraw, Let's Enhance, Fontjoy, Brandmark, Midjourney");
-    }
-    else if (isMac) {
+    } else if (isMac) {
       results.add(
           'Sketch, Figma, InVision, Adobe InDesign, Adobe Sensei, Uizard.io, Lunacy');
+    } else {
+      results.add('Нет подходящего результата');
     }
-     else {
-  results.add('Нет подходящего результата');
-}
 
     String resultString = results.join(', ');
-
-
-
-
-
-
-
-
 
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
           padding: EdgeInsets.only(left: 7),
-          //child: Image.asset('images/logotip-1_jpg.png',
-          // width: 18,
-          // height: 18),
         ),
         title: const Text(
           'Справочник разработчика веб - дизайна',
@@ -778,9 +766,7 @@ class DEMOresultView extends StatelessWidget {
               ),
               SizedBox(height: 40),
 
-              // Expanded(
-              //  flex: 1,
-              // child:
+              
               Container(
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(178, 124, 232, 1),
@@ -799,7 +785,7 @@ class DEMOresultView extends StatelessWidget {
                   children: [
                     SingleChildScrollView(
                       child: Flexible(
-                        // fit: FlexFit.tight,
+                       
 
                         child: Padding(
                           padding: EdgeInsets.only(
@@ -818,7 +804,7 @@ class DEMOresultView extends StatelessWidget {
                   ],
                 ),
               ),
-              //),
+              
 
               SizedBox(height: 100),
               Padding(
@@ -846,7 +832,8 @@ class DEMOresultView extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),SizedBox(height: 50),
+              ),
+              SizedBox(height: 50),
               Padding(
                 padding: EdgeInsets.only(),
                 child: ElevatedButton(
@@ -875,12 +862,6 @@ class DEMOresultView extends StatelessWidget {
               ),
             ],
           ),
-          // child:
-          //   Text(
-          //   result,
-          //   style: TextStyle(
-          //       fontSize: 35, fontWeight: FontWeight.w800, color: Colors.white),
-          // ),
         ),
       ),
     );
