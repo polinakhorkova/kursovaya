@@ -11,8 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Video Player Example'),
+        title: const Text(
+          'Справочник разработчика веб - дизайна',
+          style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
+        centerTitle: true,
+        toolbarHeight: 100,
+        backgroundColor: Color.fromRGBO(178, 124, 232, 1),
+      ),
         body: VideoPlayerScreen(),
       ),
     );
@@ -45,22 +51,18 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       }
       _isPlaying = !_isPlaying;
     });
-  }
+  } 
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Справочник разработчика веб - дизайна',
-          style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
-        ),
-        centerTitle: true,
-        toolbarHeight: 100,
-        backgroundColor: Color.fromRGBO(178, 124, 232, 1),
-      ),
+    return Scaffold( 
+      
+      
       backgroundColor: Color.fromRGBO(230, 162, 246, 1),
-      body: Center(
+      
+      body: 
+      Center(
+        
         child: FutureBuilder(
           future: _initializeVideoPlayerFuture,
           builder: (context, snapshot) {
@@ -68,14 +70,14 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               return Stack(
                 children: [
                   SizedBox(
-                    width: double.infinity,
-                    height: double.infinity,
+                    width: 1150,
+                    height: 1100,
                     child: VideoPlayer(_videoPlayerController),
                   ),
                   Positioned(
-                    bottom: 20,
-                    right: 170,
-                    left: 170,
+                    bottom: 130,
+                    right: 30,
+                    left: 30,
                     child: VideoProgressIndicator(
                       _videoPlayerController,
                       allowScrubbing: true,
@@ -83,8 +85,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     ),
                   ),
                   Positioned(
-                    bottom: 20,
-                    left: 160,
+                    bottom: 130,
+                    left: 25,
                     child: IconButton(
                       color: Colors.white,
                       icon: Icon(_isPlaying ? Icons.pause : Icons.play_arrow),
@@ -93,8 +95,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     ),
                   ),
                   Positioned(
-                    bottom: 25,
-                    right: 160,
+                    bottom: 135,
+                    right: 25,
                     child: IconButton(
                       color: Colors.white,
                       icon: Icon(Icons.fullscreen),

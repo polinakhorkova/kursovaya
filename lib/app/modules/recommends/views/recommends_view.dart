@@ -11,7 +11,7 @@ class RecommendsView extends GetView<RecommendsController> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Справочник разработчика веб дизайна',
+          'Справочник разработчика веб - дизайна',
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
         ),
         centerTitle: true,

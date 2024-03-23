@@ -19,7 +19,7 @@ class HomeView extends GetView<HomeController> {
                 Image.asset('images/logotip-1_jpg.png', width: 18, height: 18),
           ),
           title: const Text(
-            'Справочник разработчика веб дизайна',
+            'Справочник разработчика веб - дизайна',
             style: TextStyle(fontSize: 40, fontWeight: FontWeight.w800),
           ),
           centerTitle: true,
@@ -48,7 +48,7 @@ class HomeView extends GetView<HomeController> {
                     Padding(
                       padding: EdgeInsets.only(left: 100),
                       child: ElevatedButton(
-                        onPressed: () => Get.toNamed(Routes.INSTRUCTIONS2),
+                        onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
                         child: Container(
                           width: 250,
                           padding: EdgeInsets.all(15),
