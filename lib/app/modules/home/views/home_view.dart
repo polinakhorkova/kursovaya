@@ -15,9 +15,8 @@ class HomeView extends GetView<HomeController> {
         appBar: AppBar(
           leading: Padding(
             padding: EdgeInsets.only(left: 7),
-            child: Image.asset('images/logotip-1_jpg.png',
-                width: 18, 
-                height: 18),
+            child:
+                Image.asset('images/logotip-1_jpg.png', width: 18, height: 18),
           ),
           title: const Text(
             'Справочник разработчика веб дизайна',
@@ -49,7 +48,7 @@ class HomeView extends GetView<HomeController> {
                     Padding(
                       padding: EdgeInsets.only(left: 100),
                       child: ElevatedButton(
-                        onPressed: () => Get.toNamed(Routes.INSTRUCTIONS),
+                        onPressed: () => Get.toNamed(Routes.INSTRUCTIONS2),
                         child: Container(
                           width: 250,
                           padding: EdgeInsets.all(15),
