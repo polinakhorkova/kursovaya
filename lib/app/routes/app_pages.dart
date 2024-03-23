@@ -54,8 +54,7 @@ import '../modules/instr9/bindings/instr9_binding.dart';
 import '../modules/instr9/views/instr9_view.dart';
 import '../modules/instructions/bindings/instructions_binding.dart';
 import '../modules/instructions/views/instructions_view.dart';
-import '../modules/instructions2/bindings/instructions2_binding.dart';
-import '../modules/instructions2/views/instructions2_view.dart';
+
 import '../modules/instruments/bindings/instruments_binding.dart';
 import '../modules/instruments/views/instruments_view.dart';
 import '../modules/recommends/bindings/recommends_binding.dart';
@@ -213,18 +212,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DEMO,
-      page: () => const DemoView(),
+      page: () => MyApp(),
       binding: DemoBinding(),
     ),
     GetPage(
       name: _Paths.FILTER_D_E_M_O,
       page: () => FlutterDEMOView(),
       binding: FilterDEMOBinding(),
-    ),
-    GetPage(
-      name: _Paths.INSTRUCTIONS2,
-      page: () => const Instructions2View(),
-      binding: Instructions2Binding(),
     ),
   ];
 }
