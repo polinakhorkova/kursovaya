@@ -785,7 +785,7 @@ class DEMOresultView extends StatelessWidget {
                 child: Column(
                   children: [
                     SingleChildScrollView(
-                      child: Flexible(
+                      child: Expanded(
                        
 
                         child: Padding(
